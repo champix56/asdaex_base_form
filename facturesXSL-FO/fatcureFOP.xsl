@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<!--template pour un noeud facture-->
+	<xsl:template match="facture">
+		<!--gen. d'un nouvel ensemble de page pour ce template-->
+			<fo:page-sequence master-reference="A4_Portrait_nohead_nofoot_nomargins">
+				<fo:flow flow-name="xsl-region-body">
+					<fo:block>
+					<!--mise en place d'element contenu pour une facture-->
+						Facture N°<xsl:value-of select="@numfacture"/>
+						émise le :<xsl:value-of select="@datefacture"/>
+						<!--acces en profondeur uniquement A PARTIR DU NOEUD COURRANT-->
+						Montant total :<xsl:value-of select="sum(.//stotligne)"/>€
+						Montant total de toutes les factures :<xsl:value-of select="sum(//stotligne)"/>€
+					</fo:block>
+				</fo:flow>
+			</fo:page-sequence>
+	</xsl:template>
 <!--template pour le demarrage de la transformation-->
 	<xsl:template match="/">
 	<!--balise principale du format de sortie FO-->
