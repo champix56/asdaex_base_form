@@ -5,10 +5,8 @@
 	<xsl:template match="facture">
 		une facture par template <br/>
 	</xsl:template>
-	<!--decl. d'un model de presentation global pour une balise facture-->
-	<xsl:template match="facture[contains(@type,'evis')]">
-		un devis par template <br/>
-	</xsl:template>
+	<!--decl. d'un model de presentation global pour une balise facture de type devis ne generrant rien mais de nom de balise facture qui est matché sur un template match facture-->
+	<xsl:template match="facture[contains(@type,'evis')]"></xsl:template>
 	<!--mise en oeuvre d'un template "poubelle" ne faisant rien pour tous les noeuds recus ne possèdant pas de noeuds de presentation-->
 	<xsl:template match="*|@*"/>	
 	<xsl:template match="/">
