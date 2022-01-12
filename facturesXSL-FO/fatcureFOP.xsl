@@ -13,7 +13,7 @@
 					format metrique et accessoires (pieds tete, ...) 
 					d'un type de papier utilisable
 				-->
-				<fo:simple-page-master master-name="">
+				<fo:simple-page-master master-name="A4_Portrait_nohead_nofoot_nomargins" page-height="297mm" page-width="21cm">
 					<fo:region-body></fo:region-body>
 				</fo:simple-page-master>
 			</fo:layout-master-set>
