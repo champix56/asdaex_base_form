@@ -32,6 +32,11 @@
 				<fo:simple-page-master master-name="A4_Portrait_nohead_nofoot_nomargins" page-height="297mm" page-width="21cm">
 					<fo:region-body></fo:region-body>
 				</fo:simple-page-master>
+				<fo:simple-page-master master-name="A4_Portrait_head_foot_nomargins" page-height="297mm" page-width="21cm">
+					<fo:region-body background-color="grey"></fo:region-body>
+					<fo:region-before background-color="#AFEEEE" extent="2cm"/>
+					<fo:region-after background-color="rebeccapurple" extent="0.5cm"/>
+				</fo:simple-page-master>
 			</fo:layout-master-set>
 			<!--
 				def. des constructions des differents chapitres
