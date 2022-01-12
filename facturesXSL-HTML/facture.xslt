@@ -7,7 +7,7 @@
 				<title></title>
 			</head>
 			<body>
-				DEMAT Breizh
+				<h1>Facture en date du :<xsl:value-of select="/factures/@dateeditionXML"/></h1>
 			</body>
 		</html>
 	</xsl:template>
