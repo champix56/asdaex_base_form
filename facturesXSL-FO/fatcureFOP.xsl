@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<xsl:include href="style.xsl"/>
 <!--template pour un noeud facture-->
 	<xsl:template match="facture">
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
@@ -8,7 +9,7 @@
 					<fo:block color="blue" font-weight="700" font-size="12pt">
 					<!--mise en place d'element contenu pour une facture-->
 						Facture N°<xsl:value-of select="@numfacture"/>
-						<fo:block font-style="oblique" text-decoration="underline" color="green" >
+						<fo:block xsl:use-attribute-sets="oblic-green underline" >
 							émise le :<xsl:value-of select="@datefacture"/>
 						</fo:block>
 						<!--acces en profondeur uniquement A PARTIR DU NOEUD COURRANT-->
