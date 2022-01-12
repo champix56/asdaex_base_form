@@ -7,7 +7,10 @@
 				<title></title>
 			</head>
 			<body>
-				<h1>Facture en date du :<xsl:value-of select="/factures/@dateeditionXML"/></h1>
+				<h1>Facture en date du :
+					<!--recup. de la valeur dans le xml-->				
+					<xsl:value-of select="/factures/@dateeditionXML"/>
+				</h1>
 			</body>
 		</html>
 	</xsl:template>
