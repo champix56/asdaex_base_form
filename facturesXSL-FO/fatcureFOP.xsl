@@ -21,7 +21,7 @@
 				def. des constructions des differents chapitres
 				du document à produire
 			-->
-			<fo:page-sequence master-reference="">
+			<fo:page-sequence master-reference="A4_Portrait_nohead_nofoot_nomargins">
 				<fo:flow flow-name="">
 					<fo:block></fo:block>
 				</fo:flow>
