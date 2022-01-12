@@ -36,14 +36,18 @@
 			<!--
 				def. des constructions des differents chapitres
 				du document à produire
+				
+avec une page de garde sans declenchementtemplate et non reutilisable 
+
+avec une suite de page-sequence generrer par le apply-templates //facture
 			-->
 			<fo:page-sequence master-reference="A4_Portrait_nohead_nofoot_nomargins">
 				<fo:flow flow-name="xsl-region-body">
-					<fo:block>
-						DEMAT BREIZH
-					</fo:block>
+					<fo:block> UNE PAGE DE GARDE CONSTANTE avec <xsl:value-of select="count(//facture)"/> factures</fo:block>
 				</fo:flow>
 			</fo:page-sequence>
+			<!--declenchement des pages sequence pour chacunes des balises //facture -->
+			<xsl:apply-templates select="//facture"/>
 		</fo:root>
 	</xsl:template>
 </xsl:stylesheet>
