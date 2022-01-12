@@ -11,6 +11,14 @@
 					<!--recup. de la valeur dans le xml-->				
 					<xsl:value-of select="/factures/@dateeditionXML"/>
 				</h1>
+				<!--
+					une boucle local de parcous 
+					des noeuds trouvés par la requete XPath
+					(non reutilisable en dehors du template ou il est decl.)
+				-->
+				<xsl:for-each select="/factures/facture">
+					Une facture<br/>
+				</xsl:for-each>
 			</body>
 		</html>
 	</xsl:template>
