@@ -3,7 +3,7 @@
 <!--template pour un noeud facture-->
 	<xsl:template match="facture">
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
-			<fo:page-sequence master-reference="A4_Portrait_nohead_nofoot_nomargins">
+			<fo:page-sequence master-reference="A4_Portrait_head_foot_nomargins">
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
 					<!--mise en place d'element contenu pour une facture-->
@@ -32,6 +32,7 @@
 				<fo:simple-page-master master-name="A4_Portrait_nohead_nofoot_nomargins" page-height="297mm" page-width="21cm">
 					<fo:region-body></fo:region-body>
 				</fo:simple-page-master>
+				<!--2eme format simple avec regions disponibles-->
 				<fo:simple-page-master master-name="A4_Portrait_head_foot_nomargins" page-height="297mm" page-width="21cm">
 					<fo:region-body background-color="grey"></fo:region-body>
 					<fo:region-before background-color="#AFEEEE" extent="2cm"/>
