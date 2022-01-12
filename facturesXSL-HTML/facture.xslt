@@ -9,6 +9,8 @@
 	<xsl:template match="facture[contains(@type,'evis')]">
 		un devis par template <br/>
 	</xsl:template>
+	<!--mise en oeuvre d'un template "poubelle" ne faisant rien pour tous les noeuds recus ne possèdant pas de noeuds de presentation-->
+	<xsl:template match="*|@*"/>	
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
@@ -20,7 +22,8 @@
 					<xsl:value-of select="/factures/@dateeditionXML"/>
 				</h1>
 				<!--mise en oeuvre des templates en fonction des noeuds selectionnés par Exp. XPath-->
-				<xsl:apply-templates select="//facture"/>
+				<xsl:apply-templates select="//*"/>
+				<xsl:apply-templates select="//@*"/>
 			</body>
 		</html>
 	</xsl:template>
