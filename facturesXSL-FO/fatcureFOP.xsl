@@ -5,10 +5,12 @@
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
 			<fo:page-sequence master-reference="A4_Portrait_head_foot_nomargins">
 				<fo:flow flow-name="xsl-region-body">
-					<fo:block>
+					<fo:block color="blue" font-weight="700" font-size="12pt">
 					<!--mise en place d'element contenu pour une facture-->
 						Facture N°<xsl:value-of select="@numfacture"/>
-						émise le :<xsl:value-of select="@datefacture"/>
+						<fo:block font-style="oblique" text-decoration="underline" color="green" >
+							émise le :<xsl:value-of select="@datefacture"/>
+						</fo:block>
 						<!--acces en profondeur uniquement A PARTIR DU NOEUD COURRANT-->
 						Montant total :<xsl:value-of select="sum(.//stotligne)"/>€
 						Montant total de toutes les factures :<xsl:value-of select="sum(//stotligne)"/>€
