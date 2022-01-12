@@ -23,7 +23,9 @@
 			-->
 			<fo:page-sequence master-reference="A4_Portrait_nohead_nofoot_nomargins">
 				<fo:flow flow-name="xsl-region-body">
-					<fo:block></fo:block>
+					<fo:block>
+						DEMAT BREIZH
+					</fo:block>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
