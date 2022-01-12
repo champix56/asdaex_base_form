@@ -5,6 +5,10 @@
 	<xsl:template match="facture">
 		une facture par template <br/>
 	</xsl:template>
+	<!--decl. d'un model de presentation global pour une balise facture-->
+	<xsl:template match="facture[contains(@type,'evis')]">
+		un devis par template <br/>
+	</xsl:template>
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
