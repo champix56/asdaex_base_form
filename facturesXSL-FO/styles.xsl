@@ -15,6 +15,9 @@
 	<xsl:attribute-set name="underline">
 		<xsl:attribute name="text-decoration">underline</xsl:attribute>
 	</xsl:attribute-set>
+		<xsl:attribute-set name="no-underline">
+		<xsl:attribute name="text-decoration">normal</xsl:attribute>
+	</xsl:attribute-set>
 	<xsl:attribute-set name="blue">
 		<xsl:attribute name="color">blue</xsl:attribute>
 	</xsl:attribute-set>	
