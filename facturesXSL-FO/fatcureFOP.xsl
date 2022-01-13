@@ -2,8 +2,19 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
-	<!--un template generique pour un noeuds quel quil soit tant qu'il est enfant de ligne-->
-	<xsl:template match="ligne/*">
+	<!--
+		template poubelle d'echapement pour annuler 
+		le traitement automituqe ne possedant pas de template 
+		de traitement explicite
+	-->
+	<xsl:template match="*|@*"/>
+	<!--
+		un template generique pour un noeuds 
+		quel quil soit tant qu'il est enfant de ligne
+		
+		Avec exclusion des balises portant le nom de balise 'surface'
+	-->
+	<xsl:template match="ligne/*[name()!='surface']">
 		<fo:table-cell border-top="0.5mm solid black">
 			<fo:block><xsl:value-of select="."/></fo:block>
 		</fo:table-cell>	
