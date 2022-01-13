@@ -19,6 +19,12 @@
 			<fo:block><xsl:value-of select="."/></fo:block>
 		</fo:table-cell>	
 	</xsl:template>
+	<!--templae pour un enfant de ligne specifique necessitant un traitement d'arondi et expression de la devise-->
+	<xsl:template match="ligne/phtByUnit | ligne/stotligne">
+		<fo:table-cell border-top="0.5mm solid black">
+			<fo:block><xsl:value-of select="round(. *100) div 100"/>€</fo:block>
+		</fo:table-cell>	
+	</xsl:template>
 	<xsl:template match="lignes/ligne">
 		<fo:table-row>
 			<xsl:apply-templates select="*"/>
