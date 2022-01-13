@@ -10,6 +10,12 @@
 				<xsl:otherwise>Facture </xsl:otherwise>
 			</xsl:choose> N° <fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="."/></fo:inline><fo:block/>
 			En date du : <fo:inline xsl:use-attribute-sets="bold blue" text-decoration="normal"><xsl:value-of select="../@datefacture"/></fo:inline>
+			<!--
+				block conditionnel sans usage en cas de valeur fausse 
+				(test uniquement si vrai et pas d'execution contraire si faux)
+				ATTENTION si cas le cas contraire doit lui aussi executer du code on utilise le choose/when/otherwise
+			-->
+			<xsl:if test="../@refdevis"><fo:block/>En ref. du devis N° <xsl:value-of select="../@refdevis"/></xsl:if>
 		</fo:block>
 	</xsl:template>
 <!--template pour un noeud facture-->
