@@ -16,6 +16,8 @@
 						</fo:block>
 						<!--acces en profondeur uniquement A PARTIR DU NOEUD COURRANT-->
 						Montant total :<xsl:value-of select="sum(.//stotligne)"/>€
+						<!--saut de ligne forcer-->
+						<fo:block/>
 						Montant total de toutes les factures :<xsl:value-of select="sum(//stotligne)"/>€
 					</fo:block>
 				</fo:flow>
