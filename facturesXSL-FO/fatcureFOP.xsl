@@ -119,6 +119,15 @@
 	<xsl:template match="facture">
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
 			<fo:page-sequence master-reference="A4_Portrait_head_foot_nomargins">
+				<!--
+					ecriture dans les regions pieds, tete & marges
+				-->
+				<fo:static-content flow-name="xsl-region-after">
+					<fo:block text-align="center">
+						<!--numero de la page dans le document complet pdf de sortie-->
+						<fo:page-number/>
+					</fo:block>
+				</fo:static-content>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
 						<xsl:apply-templates select="@numfacture"/>
