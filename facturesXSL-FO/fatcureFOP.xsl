@@ -12,6 +12,10 @@
 		ATTENTION contrairement au template match, le template NAME n'effectue pas de placement dans un noued
 	-->
 	<xsl:template name="lignes-total">
+		<!--  
+			equivalent a une variable mais a porté template et possibilité de fournir la valeur lors de l'appel
+		-->
+		<xsl:param name="mesLignesDeFactures"/>
 		<fo:table-row>
 			<fo:table-cell number-columns-spanned="4" background-color="rgb(144,238,244)">
 				<fo:block text-align="right">Montant ttc :<xsl:value-of select="format-number(sum(.//stotligne),'0.00€')"/></fo:block>
