@@ -2,23 +2,19 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
+	<xsl:template match="@numfacture">
+		<fo:block xsl:use-attribute-sets="block-numfacture">
+			Facture N° <fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="."/></fo:inline><fo:block/>
+			En date du : <fo:inline xsl:use-attribute-sets="bold blue"><xsl:value-of select="../@datefacture"/></fo:inline>
+		</fo:block>
+	</xsl:template>
 <!--template pour un noeud facture-->
 	<xsl:template match="facture">
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
 			<fo:page-sequence master-reference="A4_Portrait_head_foot_nomargins">
 				<fo:flow flow-name="xsl-region-body">
-					<fo:block color="blue" font-weight="700" font-size="12pt">
-					<!--mise en place d'element contenu pour une facture-->
-						Facture N°<xsl:value-of select="@numfacture"/>
-						<!--remplacement des styles enligne par attribut-sets de style-->
-						<fo:block xsl:use-attribute-sets="italic red underline bold">
-							émise le :<xsl:value-of select="@datefacture"/>
-						</fo:block>
-						<!--acces en profondeur uniquement A PARTIR DU NOEUD COURRANT-->
-						Montant total :<xsl:value-of select="sum(.//stotligne)"/>€
-						<!--saut de ligne forcer-->
-						<fo:block/>
-						Montant total de toutes les factures :<fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="sum(//stotligne)"/>€</fo:inline>
+					<fo:block xsl:use-attribute-sets="italic">
+						<xsl:apply-templates select="@numfacture"/>
 					</fo:block>
 				</fo:flow>
 			</fo:page-sequence>
