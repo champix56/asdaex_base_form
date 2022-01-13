@@ -72,6 +72,8 @@
 		</fo:table-header>
 		<fo:table-body>
 			<xsl:apply-templates select="ligne"/>
+			<!--APPEL DU TEMPLATE NAME-->
+			<xsl:call-template name="lignes-total"/>
 		</fo:table-body>
 	</fo:table>
 	</xsl:template>
