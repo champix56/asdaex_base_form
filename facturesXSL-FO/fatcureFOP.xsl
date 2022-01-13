@@ -18,7 +18,7 @@
 						Montant total :<xsl:value-of select="sum(.//stotligne)"/>€
 						<!--saut de ligne forcer-->
 						<fo:block/>
-						Montant total de toutes les factures :<xsl:value-of select="sum(//stotligne)"/>€
+						Montant total de toutes les factures :<fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="sum(//stotligne)"/>€</fo:inline>
 					</fo:block>
 				</fo:flow>
 			</fo:page-sequence>
