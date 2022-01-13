@@ -2,6 +2,13 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
+	<xsl:template match="lignes/ligne">
+		<fo:table-row>
+			<fo:table-cell>
+				<fo:block>Une ligne dans la facture</fo:block>
+			</fo:table-cell>
+		</fo:table-row>
+	</xsl:template>
 	<xsl:template match="lignes">
 	<!--structure de table-->
 	<fo:table margin-top="2cm">
@@ -16,11 +23,7 @@
 			</fo:table-row>
 		</fo:table-header>
 		<fo:table-body>
-			<fo:table-row>
-				<fo:table-cell>
-					<fo:block>fvsdvsdvqs</fo:block>
-				</fo:table-cell>
-			</fo:table-row>
+			<xsl:apply-templates select="ligne"/>
 		</fo:table-body>
 	</fo:table>
 	</xsl:template>
