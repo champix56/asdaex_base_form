@@ -10,7 +10,8 @@
 					<fo:block color="blue" font-weight="700" font-size="12pt">
 					<!--mise en place d'element contenu pour une facture-->
 						Facture N°<xsl:value-of select="@numfacture"/>
-						<fo:block font-style="oblique" text-decoration="underline" color="green" >
+						<!--remplacement des styles enligne par attribut-sets de style-->
+						<fo:block xsl:use-attribute-sets="italic red underline bold">
 							émise le :<xsl:value-of select="@datefacture"/>
 						</fo:block>
 						<!--acces en profondeur uniquement A PARTIR DU NOEUD COURRANT-->
