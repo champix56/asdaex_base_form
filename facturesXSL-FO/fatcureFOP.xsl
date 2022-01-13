@@ -5,6 +5,20 @@
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
 	<!--
+		un template ne se declenchant pas seul c'est a nous de l'APPELER EXPLICITEMENT PAR SONT NOM
+		
+		ATTENTION : Appel par XSL:CALL-TEMPLATE et non apply-templates
+
+		ATTENTION contrairement au template match, le template NAME n'effectue pas de placement dans un noued
+	-->
+	<xsl:template name="lignes-total">
+		<fo:table-row>
+			<fo:table-cell>
+				<fo:block>Une ligne de total</fo:block>
+			</fo:table-cell>
+		</fo:table-row>
+	</xsl:template>
+	<!--
 		template poubelle d'echapement pour annuler 
 		le traitement automituqe ne possedant pas de template 
 		de traitement explicite
