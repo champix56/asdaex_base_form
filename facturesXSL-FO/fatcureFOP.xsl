@@ -14,8 +14,10 @@
 	<xsl:template name="lignes-total">
 		<!--  
 			equivalent a une variable mais a porté template et possibilité de fournir la valeur lors de l'appel
+		
+			ATTENTION : VALEUR PAR DEFAULT
 		-->
-		<xsl:param name="mesLignesDeFactures"/>
+		<xsl:param name="mesLignesDeFactures" select="."/>
 		<fo:table-row>
 			<fo:table-cell number-columns-spanned="4" background-color="rgb(144,238,244)">
 				<fo:block text-align="right">Montant ttc :<xsl:value-of select="format-number(sum($mesLignesDeFactures//stotligne),'0.00€')"/></fo:block>
@@ -87,8 +89,7 @@
 			<xsl:apply-templates select="ligne"/>
 			<!--APPEL DU TEMPLATE NAME-->
 			<xsl:call-template name="lignes-total">
-				<!--appel avec une valeur pour le parametre ici lignes issue de cette facture-->
-				<xsl:with-param name="mesLignesDeFactures" select="."/>
+				<!--Usage de la valeur par defaut-->
 			</xsl:call-template>
 			<!--meme opération mais total de toutes les factures-->
 			<xsl:call-template name="lignes-total">
