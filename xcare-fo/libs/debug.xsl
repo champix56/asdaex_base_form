@@ -4,7 +4,7 @@
 			<fo:block/><xsl:value-of select="name()"/>:<xsl:value-of select="."/>*
 	</xsl:template>
 	<xsl:template match="*">
-		<fo:block color="red" border="5mm solid red" padding="7mm" margin-top="5mm">
+		<fo:block color="red" border="0.5mm solid red" padding="7mm" margin-top="5mm">
 			<xsl:value-of select="."/>:<xsl:value-of select="name()"/>
 			<xsl:if test="@*">
 				<xsl:apply-templates select="@*"/>
