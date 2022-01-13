@@ -4,7 +4,11 @@
 	<xsl:include href="styles.xsl"/>
 	<xsl:template match="@numfacture">
 		<fo:block xsl:use-attribute-sets="block-numfacture underline">
-			Facture N° <fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="."/></fo:inline><fo:block/>
+		<!--block conditionnel avec plusieurs possibilités (pas de if si lusieurs possibilités)-->
+			<xsl:choose>
+				<xsl:when test="contains(../@type,'evis')">Devis </xsl:when>
+				<xsl:otherwise>Facture </xsl:otherwise>
+			</xsl:choose> N° <fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="."/></fo:inline><fo:block/>
 			En date du : <fo:inline xsl:use-attribute-sets="bold blue" text-decoration="normal"><xsl:value-of select="../@datefacture"/></fo:inline>
 		</fo:block>
 	</xsl:template>
