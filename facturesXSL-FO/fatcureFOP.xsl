@@ -94,7 +94,7 @@
 			<!--meme opération mais total de toutes les factures-->
 			<xsl:call-template name="lignes-total">
 				<!--appel avec une valeur pour le parametre ici lignes issue de cette facture-->
-				<xsl:with-param name="mesLignesDeFactures" select="//lignes"/>
+				<xsl:with-param name="mesLignesDeFactures" select="//facture[position()>=2]/lignes"/>
 			</xsl:call-template>
 		</fo:table-body>
 	</fo:table>
