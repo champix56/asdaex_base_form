@@ -173,7 +173,11 @@ avec une suite de page-sequence generrer par le apply-templates //facture
 				</fo:flow>
 			</fo:page-sequence>
 			<!--declenchement des pages sequence pour chacunes des balises //facture -->
-			<xsl:apply-templates select="//facture"/>
+			<xsl:apply-templates select="//facture">
+				<!--re order node list dans le apply-->
+				<xsl:sort select="@datefacture"/>
+				<xsl:sort select="@numfacture"/>
+			</xsl:apply-templates>
 		</fo:root>
 	</xsl:template>
 </xsl:stylesheet>
