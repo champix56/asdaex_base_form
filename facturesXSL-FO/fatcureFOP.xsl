@@ -13,8 +13,13 @@
 	-->
 	<xsl:template name="lignes-total">
 		<fo:table-row>
-			<fo:table-cell>
-				<fo:block>Une ligne de total</fo:block>
+			<fo:table-cell number-columns-spanned="4" background-color="rgb(144,238,244)">
+				<fo:block text-align="right">Montant ttc :<xsl:value-of select="format-number(sum(.//stotligne),'0.00€')"/></fo:block>
+			</fo:table-cell>
+		</fo:table-row>
+		<fo:table-row>
+			<fo:table-cell number-columns-spanned="4">
+				<fo:block>Une ligne de total -- <xsl:value-of select="name()"/></fo:block>
 			</fo:table-cell>
 		</fo:table-row>
 	</xsl:template>
