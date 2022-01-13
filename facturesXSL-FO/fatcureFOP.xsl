@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<!--def. grossiere de l'existance d'un format d'ecriture de devise euro-->
+	<xsl:decimal-format name="devise-euro" grouping-separator=" " decimal-separator="," NaN="INVALID"/>
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
 	<!--
