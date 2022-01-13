@@ -2,11 +2,15 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
+	<!--un template generique pour un noeuds quel quil soit tant qu'il est enfant de ligne-->
+	<xsl:template match="ligne/*">
+		<fo:table-cell border-top="0.5mm solid black">
+			<fo:block><xsl:value-of select="."/></fo:block>
+		</fo:table-cell>	
+	</xsl:template>
 	<xsl:template match="lignes/ligne">
 		<fo:table-row>
-			<fo:table-cell>
-				<fo:block>Une ligne dans la facture</fo:block>
-			</fo:table-cell>
+			<xsl:apply-templates select="*"/>
 		</fo:table-row>
 	</xsl:template>
 	<xsl:template match="lignes">
