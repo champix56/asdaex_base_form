@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="./defaults_styles.xsl"/>
+	<xsl:include href="./defaults_components.xsl"/>
 
 	<xsl:template name="default-layouts">
 	<!--def. des formats de apier courrant utilisable par tous les formulaires-->
