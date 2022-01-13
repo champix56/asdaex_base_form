@@ -86,7 +86,15 @@
 		<fo:table-body>
 			<xsl:apply-templates select="ligne"/>
 			<!--APPEL DU TEMPLATE NAME-->
-			<xsl:call-template name="lignes-total"/>
+			<xsl:call-template name="lignes-total">
+				<!--appel avec une valeur pour le parametre ici lignes issue de cette facture-->
+				<xsl:with-param name="mesLignesDeFactures" select="."/>
+			</xsl:call-template>
+			<!--meme opération mais total de toutes les factures-->
+			<xsl:call-template name="lignes-total">
+				<!--appel avec une valeur pour le parametre ici lignes issue de cette facture-->
+				<xsl:with-param name="mesLignesDeFactures" select="//lignes"/>
+			</xsl:call-template>
 		</fo:table-body>
 	</fo:table>
 	</xsl:template>
