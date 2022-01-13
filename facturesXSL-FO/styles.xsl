@@ -7,7 +7,7 @@
 		<xsl:attribute name="text-align">center</xsl:attribute>
 	</xsl:attribute-set>
 	<xsl:attribute-set name="bold">
-		<xsl:attribute name="font-weight">900</xsl:attribute>
+		<xsl:attribute name="font-weight">bold</xsl:attribute>
 	</xsl:attribute-set>
 	<xsl:attribute-set name="italic">
 		<xsl:attribute name="font-style">italic</xsl:attribute>
