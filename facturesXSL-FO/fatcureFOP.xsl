@@ -32,8 +32,10 @@
 			<!--
 				usage de la "variable" le nom de la variable est prefixée avec '$' 
 				pour que XPATH prenne bien la variable et non un noeud du fichier XML
+
+				Ajout du format du nombre
 			-->
-			<fo:block><xsl:value-of select="$arrondiValeur"/>€</fo:block>
+			<fo:block><xsl:value-of select="format-number($arrondiValeur,'0.00€')"/></fo:block>
 		</fo:table-cell>	
 	</xsl:template>
 	<xsl:template match="lignes/ligne">
