@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<!--inclusion des styles xsl sous forme attribute set -->
+	<xsl:include href="styles.xsl"/>
 <!--template pour un noeud facture-->
 	<xsl:template match="facture">
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
