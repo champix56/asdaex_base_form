@@ -9,6 +9,7 @@
 				<xsl:call-template name="default-layouts"/>
 			</fo:layout-master-set>
 			<fo:page-sequence master-reference="A4_portrait_head_foot">
+				<xsl:call-template name="default-region-before"/>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>Hello</fo:block>
 				</fo:flow>
