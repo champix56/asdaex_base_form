@@ -24,7 +24,16 @@
 	<!--templae pour un enfant de ligne specifique necessitant un traitement d'arondi et expression de la devise-->
 	<xsl:template match="ligne/phtByUnit | ligne/stotligne">
 		<fo:table-cell border-top="0.5mm solid black">
-			<fo:block><xsl:value-of select="round(. *100) div 100"/>€</fo:block>
+			<!--
+				mise en oeuvre d'une constante reutilisable 
+				(uniquement de la balise parent ou elle est déclaré)
+			-->
+			<xsl:variable name="arrondiValeur" select="round( . *100) div 100"/>
+			<!--
+				usage de la "variable" le nom de la variable est prefixée avec '$' 
+				pour que XPATH prenne bien la variable et non un noeud du fichier XML
+			-->
+			<fo:block><xsl:value-of select="$arrondiValeur"/>€</fo:block>
 		</fo:table-cell>	
 	</xsl:template>
 	<xsl:template match="lignes/ligne">
