@@ -3,7 +3,9 @@
 	<!--def. d'un ensemble dattribs de propriete css pour FO-->
 	<xsl:attribute-set name="block-numfacture">
 		<xsl:attribute name="border">0.5mm solid black</xsl:attribute>
-		<xsl:attribute name="width">50%</xsl:attribute>
+		<xsl:attribute name="margin-top">2cm</xsl:attribute>
+		<xsl:attribute name="margin-left">25%</xsl:attribute>
+		<xsl:attribute name="margin-right">25%</xsl:attribute>
 		<xsl:attribute name="text-align">center</xsl:attribute>
 	</xsl:attribute-set>
 	<xsl:attribute-set name="bold">
