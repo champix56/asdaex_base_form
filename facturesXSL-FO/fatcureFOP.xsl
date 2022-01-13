@@ -2,6 +2,28 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
+	<xsl:template match="lignes">
+	<!--structure de table-->
+	<fo:table margin-top="2cm">
+	<!--header facultatif-->
+		<fo:table-header>
+			<fo:table-row background-color="rgb(200,200,235)">
+				<fo:table-cell><fo:block>Ref</fo:block></fo:table-cell>
+				<fo:table-cell><fo:block>Designation</fo:block></fo:table-cell>
+				<fo:table-cell><fo:block>€/Unit.</fo:block></fo:table-cell>
+				<fo:table-cell><fo:block>Quant.</fo:block></fo:table-cell>
+				<fo:table-cell background-color="orange"><fo:block>Stotligne</fo:block></fo:table-cell>
+			</fo:table-row>
+		</fo:table-header>
+		<fo:table-body>
+			<fo:table-row>
+				<fo:table-cell>
+					<fo:block>fvsdvsdvqs</fo:block>
+				</fo:table-cell>
+			</fo:table-row>
+		</fo:table-body>
+	</fo:table>
+	</xsl:template>
 	<xsl:template match="@numfacture">
 		<fo:block xsl:use-attribute-sets="block-numfacture underline">
 		<!--block conditionnel avec plusieurs possibilités (pas de if si lusieurs possibilités)-->
@@ -25,6 +47,7 @@
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
 						<xsl:apply-templates select="@numfacture"/>
+						<xsl:apply-templates select="lignes"/>
 					</fo:block>
 				</fo:flow>
 			</fo:page-sequence>
