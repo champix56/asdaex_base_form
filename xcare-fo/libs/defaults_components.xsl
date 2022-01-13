@@ -10,7 +10,13 @@
 				<!--cas par default pas de html présent et/ou pas de @unformatedlabel rempli-->
 				<xsl:otherwise><xsl:value-of select="@label"/></xsl:otherwise>
 			</xsl:choose>
-			
+		</fo:block>
+	</xsl:template>
+	<xsl:template match="*[@style='draw']">
+		<xsl:param name="width">15cm</xsl:param>
+		<xsl:param name="height">15cm</xsl:param>
+		<fo:block text-align="center">
+			<fo:external-graphic src="data:image/jpg;base64,{.}" scaling="uniform" content-height="{$height}" content-width="{$width}"/>
 		</fo:block>
 	</xsl:template>
 </xsl:stylesheet>
