@@ -12,6 +12,9 @@
 	<xsl:attribute-set name="italic">
 		<xsl:attribute name="font-style">italic</xsl:attribute>
 	</xsl:attribute-set>
+	<xsl:attribute-set name="underline">
+		<xsl:attribute name="text-decoration">underline</xsl:attribute>
+	</xsl:attribute-set>
 	<xsl:attribute-set name="blue">
 		<xsl:attribute name="color">blue</xsl:attribute>
 	</xsl:attribute-set>	
