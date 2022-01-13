@@ -3,9 +3,9 @@
 	<!--inclusion des styles xsl sous forme attribute set -->
 	<xsl:include href="styles.xsl"/>
 	<xsl:template match="@numfacture">
-		<fo:block xsl:use-attribute-sets="block-numfacture">
+		<fo:block xsl:use-attribute-sets="block-numfacture underline">
 			Facture N° <fo:inline xsl:use-attribute-sets="underline"><xsl:value-of select="."/></fo:inline><fo:block/>
-			En date du : <fo:inline xsl:use-attribute-sets="bold blue"><xsl:value-of select="../@datefacture"/></fo:inline>
+			En date du : <fo:inline xsl:use-attribute-sets="bold blue" text-decoration="normal"><xsl:value-of select="../@datefacture"/></fo:inline>
 		</fo:block>
 	</xsl:template>
 <!--template pour un noeud facture-->
@@ -13,7 +13,7 @@
 		<!--gen. d'un nouvel ensemble de page pour ce template-->
 			<fo:page-sequence master-reference="A4_Portrait_head_foot_nomargins">
 				<fo:flow flow-name="xsl-region-body">
-					<fo:block xsl:use-attribute-sets="italic">
+					<fo:block>
 						<xsl:apply-templates select="@numfacture"/>
 					</fo:block>
 				</fo:flow>
