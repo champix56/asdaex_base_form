@@ -16,7 +16,21 @@
 							<fo:table-body>
 								<fo:table-row>
 									<fo:table-cell width="4cm" text-align="center">
-										<fo:block>logo</fo:block>
+										<fo:block>
+											<!--
+												mise en place d'une image externe(jpg)
+	
+												ATTENTION AUX CHEMINS DE L'IMAGE
+														TOUJOURS PRIVILEGIER LES CHEMINS "PROTOCOLE" toutes versions FOP
+													ex :	ftp://chemin/image.jpg
+															http://chemin/img.png
+															file:///c:/chemin/img.tif
+
+													PAS UTILISE DES VERSION 2.0
+															./chemin/img.jpg
+											-->
+											<fo:external-graphic src="https://github.com/champix56/asdaex_base_form/raw/master/xml/asdaex_logo.jpg" scaling="uniform" content-height="2cm" content-width="2cm"/>
+										</fo:block>
 									</fo:table-cell>
 									<fo:table-cell>
 										<fo:block text-align="center">
