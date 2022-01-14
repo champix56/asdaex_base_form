@@ -54,7 +54,7 @@
 			</fo:block>
 		</fo:table-cell>
 	</xsl:template>
-	<xsl:template match="del">
+	<xsl:template match="s">
 		<fo:inline xsl:use-attribute-sets="richetext-barre">
 			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
@@ -74,10 +74,82 @@
 			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
 	</xsl:template>
+	<xsl:template match="sup">
+		<fo:inline xsl:use-attribute-sets="richetext-sup">
+			<xsl:apply-templates select="*|text()"/>
+		</fo:inline>
+	</xsl:template>
+	<xsl:template match="sub">
+		<fo:inline xsl:use-attribute-sets="richetext-sub">
+			<xsl:apply-templates select="*|text()"/>
+		</fo:inline>
+	</xsl:template>
 	<xsl:template match="br">
 		<fo:block/>
 	</xsl:template>
 	<xsl:template match="hr">
 		<fo:block border-bottom="0.2mm solid grey"/>
+	</xsl:template>
+	<xsl:template match="div[starts-with(@style,'text-align:')]">
+		<xsl:variable name="alignType" select="substring(@style,13)"/>
+		<xsl:variable name="alignTypeNoEndLine" select="substring($alignType,1,string-length($alignType)-1)"/>
+		<fo:block text-align="{$alignTypeNoEndLine}">
+			<xsl:apply-templates select="*|text()"/>
+		</fo:block>
+	</xsl:template>
+	<xsl:template match="span[starts-with(@style,'color:')]">
+		<xsl:variable name="color" select="substring(@style,7)"/>
+		<xsl:variable name="colorNoEndLine" select="substring($color,1,string-length($color)-1)"/>
+		<fo:inline color="{$colorNoEndLine}">
+			<xsl:apply-templates select="*|text()"/>
+		</fo:inline>
+	</xsl:template>
+	<xsl:template match="div[starts-with(@style,'margin-left:')]">
+		<xsl:variable name="margin" select="substring(@style,13)"/>
+		<xsl:variable name="marginNoEndLine" select="substring($margin,1,string-length($margin)-1)"/>
+		<fo:block margin-left="{$marginNoEndLine}">
+			<xsl:apply-templates select="*|text()"/>
+		</fo:block>
+	</xsl:template>
+	<xsl:template match="ol">
+		<fo:list-block>
+			<xsl:for-each select="li">
+				<fo:list-item>
+					<fo:list-item-label end-indent="label-end()">
+						<fo:block>
+							<xsl:value-of select="position()"/>.</fo:block>
+					</fo:list-item-label>
+					<fo:list-item-body start-indent="body-start()">
+						<fo:block>
+							<xsl:apply-templates select="*|text()"/>
+						</fo:block>
+					</fo:list-item-body>
+				</fo:list-item>
+			</xsl:for-each>
+		</fo:list-block>
+	</xsl:template>
+	<xsl:template match="ul">
+		<fo:list-block>
+			<xsl:apply-templates select="*"/>
+		</fo:list-block>
+		<!--<xsl:apply-templates select="*|text()"/>-->
+	</xsl:template>
+	<xsl:template match="li">
+		<fo:list-item>
+			<fo:list-item-label end-indent="label-end()">
+				<fo:block>
+					<fo:instream-foreign-object content-height="0.3cm" content-width="0.3cm">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+							<circle cx="6" cy="6" r="5"/>
+						</svg>
+					</fo:instream-foreign-object>
+				</fo:block>
+			</fo:list-item-label>
+			<fo:list-item-body start-indent="body-start()">
+				<fo:block>
+					<xsl:apply-templates select="*|text()"/>
+				</fo:block>
+			</fo:list-item-body>
+		</fo:list-item>
 	</xsl:template>
 </xsl:stylesheet>

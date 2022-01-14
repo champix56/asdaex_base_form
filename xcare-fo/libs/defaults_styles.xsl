@@ -15,7 +15,15 @@
 	<xsl:attribute-set name="richetext-barre">
 		<xsl:attribute name="text-decoration">line-through</xsl:attribute>
 	</xsl:attribute-set>
-		<xsl:attribute-set name="richetext-italic">
+	<xsl:attribute-set name="richetext-italic">
 		<xsl:attribute name="font-style">italic</xsl:attribute>
+	</xsl:attribute-set>
+	<xsl:attribute-set name="richetext-sub">
+		<xsl:attribute name="baseline-shift">sub</xsl:attribute>
+		<xsl:attribute name="font-size">8pt</xsl:attribute>
+	</xsl:attribute-set>
+	<xsl:attribute-set name="richetext-sup">
+		<xsl:attribute name="baseline-shift">super</xsl:attribute>
+		<xsl:attribute name="font-size">8pt</xsl:attribute>
 	</xsl:attribute-set>
 </xsl:stylesheet>
