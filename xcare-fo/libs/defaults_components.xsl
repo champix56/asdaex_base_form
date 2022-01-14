@@ -29,7 +29,8 @@
 	<!--modele principal de declenchement en cascade des template pour les enfants-->
 	<xsl:template match="*[@style='richetxt']">
 		<fo:block>
-			<xsl:apply-templates select="*"/>
+		<!--declenchement en cascade du contenu text sans balise + declenchement des balises enfants-->
+			<xsl:apply-templates select="*|text()"/>
 		</fo:block>
 	</xsl:template>
 	<xsl:template match="*[@style='draw']">
