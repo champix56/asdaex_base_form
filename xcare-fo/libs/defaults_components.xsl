@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<!--inclusion des modeles pour la transposition des balises html vers fo-->
+	<xsl:include href="./html-transform.xsl"/>
 	<xsl:template match="*[@style='lbl']">
 		<fo:block>
 			<xsl:choose>
@@ -20,8 +22,15 @@
 			<xsl:value-of select="."/>
 		</fo:block>
 	</xsl:template>
+	<!--traitement des contenu text simple sans balise de mise en forme uniquement contenu dans un richetxt-->
+	<xsl:template match="*[@style='richetxt']/text()">
+		<xsl:value-of select="."/>
+	</xsl:template>
+	<!--modele principal de declenchement en cascade des template pour les enfants-->
 	<xsl:template match="*[@style='richetxt']">
-		<fo:block></fo:block>
+		<fo:block>
+			<xsl:apply-templates select="*"/>
+		</fo:block>
 	</xsl:template>
 	<xsl:template match="*[@style='draw']">
 		<!--
