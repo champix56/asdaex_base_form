@@ -27,12 +27,18 @@
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
 						<!--<xsl:apply-templates select="//*[@style='lbl']|//*[@style='txt']|//*[@style='chk']|//*[@style='richetxt']"/>					-->
-						<xsl:apply-templates select="//*[@style='treatment']"/>
+						<xsl:apply-templates select="/*/*"/>
 					</fo:block>
 					<!--installation du repere dederniere page pour le calucul de pagination complet-->
 					<xsl:call-template name="finDePagination"/>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
+	</xsl:template>
+	<!-- cascade pour les sous rapports et les contenus de lists-->
+	<xsl:template match="subreport|list">
+		<fo:block>
+			<xsl:apply-templates select="*"/>
+		</fo:block>
 	</xsl:template>
 </xsl:stylesheet>

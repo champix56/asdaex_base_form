@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<F_CORONARO_ descr="Protocole Coronaro" layout="" site="JOL" spec="reporteditor" ver="-1" patLastName="PatNom" patFirstName="PatPrenom" patBirthDate="20220113" pid="" ndosm="222222222222" inami="33333333333" doctorInami11="" doctorLastName="Encode-DrNom" doctorFirstName="Encode-DrPrenom" doctorEmail="encodeur@email.com" doctorQal="Dr" noteDate="20220113" docDate="20220113" isCanceled="0" noteHeure="164900" noteId="" sejDateIn="20220106" sejDateOut="20220113" sej="9999999" userFirstName="ViewerPrenom" userLastName="ViewerNom" sejPlace="AA" libelle1="" relDoctorInami="22222222222" relDoctorLastName="MT-DrNom" relDoctorFirstName="MT-DrPrenom" relDoctorEmail="medecin.traitant@email.com" relDoctorPhone="02/3456789" relDoctorGsm="0477/11.22.33" relDoctorAdresse="GRAND PLACE 1" relDoctorCp="1000" relDoctorCity="BRUXELLES" patSex="m" patientAdresse="RUE DE LA LOI 16" patientCp="1000" patientLoc="BRUXELLES" patientPays="B" impressionTs="20220113164927" patientNiss="11111111111 " patientNumMut="" patientNomMut="" copie="" outputType="PDF" serverType="PROD" examDate="20220113" examHeure="182200" isDraft="0" signUser="" otherSignUser="" hostName="153.89.154.112" isManualPrint="0">
+	<sublibel/>
+	<letterData/>
+	<label21092204789045220233 newline="1" title="1" style="lbl" label="Historique connu du patient:" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<label21092204289000220188 newline="1" title="1" style="lbl" label="Conclusion du dernier contact :" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<textarea21092204289001220189 newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">conclusion dernier contact</textarea21092204289001220189>
+	<subreport ver="20" descr="Allergie" name="sub_atcd" dateCreation="Jeu 13/01" heureCreation="16:49" userCreate="Asdaex utilisateur">
+		<dStart newline="0" title="0" style="date" label="Date de début" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+		<active newline="0" title="0" style="chk" label="Actif" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+		<dico newline="0" title="0" style="dico" label="Libellé" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+		<text newline="0" title="0" style="txtArea" label="Description" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	</subreport>
+	<subreport ver="2" descr="Sous Formulaire allergies" name="Sub_allergies" dateCreation="Jeu 13/01" heureCreation="16:49" userCreate="Asdaex utilisateur">
+		<dStart newline="0" title="0" style="date" label="Date de début" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+		<active newline="0" title="0" style="chk" label="Actif" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+		<dico newline="0" title="0" style="dico" label="Libellé" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+		<text newline="0" title="0" style="txtArea" label="Description" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	</subreport>
+	<traitadm newline="1" title="0" style="treatment" label="Traitement avant l&apos;admission" unformattedLabel="Traitement" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<treatment type="ambu"/>
+		<drug drugnum="1">
+			<libel>DICLOFENAC EG RETARD COMPR 75 MG</libel>
+			<dStart>Inconnue</dStart>
+			<dEnd>Indéterminée</dEnd>
+			<duration>Indéterminée</duration>
+			<posology>1 comp 1X/J</posology>
+			<startCondition/>
+			<endCondition/>
+			<conditionalStatus/>
+			<route>ORAL</route>
+			<comment/>
+			<dStop/>
+			<isPaused>0</isPaused>
+			<statusPharmacy>Pas encore validé</statusPharmacy>
+			<planificationType/>
+			<prescriber>Loveluck Susan</prescriber>
+			<lastValidation/>
+			<prescriptionContext/>
+			<status/>
+			<userCreation>Edwards Roger</userCreation>
+			<userModification>test2 user</userModification>
+		</drug>
+		<drug drugnum="2">
+			<libel>DAFALGAN FORTE COMPR 1 GR</libel>
+			<dStart>Inconnue</dStart>
+			<dEnd>16/09/2018 16:15 16:15</dEnd>
+			<duration>1 jour</duration>
+			<posology>1 comp 1X/J</posology>
+			<startCondition/>
+			<endCondition/>
+			<conditionalStatus/>
+			<route>ORAL</route>
+			<comment/>
+			<dStop/>
+			<isPaused>0</isPaused>
+			<statusPharmacy>Pas encore validé</statusPharmacy>
+			<planificationType/>
+			<prescriber>Loveluck Susan</prescriber>
+			<lastValidation/>
+			<prescriptionContext/>
+			<status/>
+			<userCreation>Cooper Joshu</userCreation>
+			<userModification>test2 user</userModification>
+		</drug>
+		<drug drugnum="3">
+			<libel>DALACIN-C CAPS 300 MG</libel>
+			<dStart>Inconnue</dStart>
+			<dEnd>12/06/2018 15:45 15:45</dEnd>
+			<duration>1 jour</duration>
+			<posology>1 cap 4X/J</posology>
+			<startCondition/>
+			<endCondition/>
+			<conditionalStatus/>
+			<route>ORAL</route>
+			<comment/>
+			<dStop/>
+			<isPaused>0</isPaused>
+			<statusPharmacy>Pas encore validé</statusPharmacy>
+			<planificationType/>
+			<prescriber>Loveluck Susan</prescriber>
+			<lastValidation/>
+			<prescriptionContext/>
+			<status/>
+			<userCreation>Cooper Joshu</userCreation>
+			<userModification>test2 user</userModification>
+		</drug>
+	</traitadm>
+	<img_lib newline="1" title="1" style="lbl" label="Images Importées :" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<dessin newline="0" title="0" style="draw" label="Coronarographie" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAAwICAgICAwICAgMDAwMEBgQEBAQECAYGBQYJCAoKCQgJCQoMDwwKCw4LCQkNEQ0ODxAQERAKDBITEhATDxAQEP/bAEMBAwMDBAMECAQECBALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/AABEIAQMBGgMBIgACEQEDEQH/xAAeAAABBAMBAQEAAAAAAAAAAAAAAQIHCAMFBgQJCv/EAEoQAAEDAwMDAwIEAggDBgENAAECAwQFBhEABxIIITETIkEUUSMyYXEVgQkWM0JSkaGxFyTwJUNicoLRZBkoNDhEdoWSorS1wfH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+qempVkZ07SAYGNAum8v00E/bSaB+m8v00zur2oVjHnTkK55OgXl+mjl+mmp8aXQLy/TTtM04eNAxbgbSSQo4+AMk/sBpULKk8uKk5+D51ifaDqVIIUOSSklKilWO3gjBH8tQB0F16u3P0oWTcFz1aZVapOdqzkiXLdU664r+KSwMqUc4AAAHwOw7aCwvI6TSgYHu7n76Q/OgVKRjTtMz+uo7rO68il7mRdsGrBuSTMqUdUyJPaMAwzGaVHRIkHMoPBDSpbKVAtBRVnjyTg6CR9eWQ/6AKluBABTgqwEkkgAZJHcnt/PUe2jvVT7ynQEwrXuKBTa4wqXRavLgoXBqUZIQsOoWy6tbIWhzkj6hLRIGQFDBVq+qCzqpf2w940S3aqum1pEBNSpstIAUiXDdTKjhZx+RTsdCT8EfcHQS8jlxHLz86drjNoL1c3I2qtDcB2AmC7cdEhVR2KhWUsOvMpWtsH5CVKKQddjyOgXA+2l03kdKPGgMD7aafzafpMD7aAHjS6NGgNGm576doDRo0aA0aNGgNGjRoDRo0aA0aNGgZo07A00/OgbySleOXnwP1/6Ooupm6F9V+sLqNrWHTanZzVYfoS5ya4pupeuxKMSQ6IZjFsttyEOBX46VBpl1wBR4NmUVtoUMnz9x2/68ajGTsbbz9wPVF64rgFFdqv8fXb31bZgCph5D4lpJQX0APtpdLKXAwXfeWySToNdtJvDe1/R7bq91WDCodLvG303FRJVMrC6i16C0Mr9KUpyKwGH+MhtSUpLoWEvd/YNS+ytLiAsHIOcH7jPnUY7Z7IUjbiTT3WbyuCu/wADpSqFRmKm7EbaplPJawy0iKw0F4DDYS47zdCcjn7lZksOEZCQonJT+XOFHv3x8d9BlPzrWV6vU23Kc/Vq1UodPhRmi67KmvpYjtgED3uK7JznUOX91NstXO5ttsdab2596tJzMh0ya2xT6TnwZs9SVNsEpS4UowpSlpQjCeYOtNTOmu5NzKs1eHVJeSbvmNKacjWpSfVh2xELR5AKjFfqTF8lLOX1KSM8SFcRoMlY6vIFdr0m19gdvbk3XmtOFhVRoyEN0OPICQox3qm5+E0vBSodlpwr8xV+HrfdKmyl4bEbe/1PuG83KjA9RcimUcNMqboSHlrecjCSltC5XFx1eXlgcvIQ2CECTaJQbfs6hw6BblNpdCpcJJRFhRWG48dhJX34toCUpJUrJ449yv3zAl8dV8K8bpj7F9MFfpd0X9UkqMiptAzKZb0JBw7NfWMJd4/2aQkrHqlCVhR9iws5yOk1gier9IyHnkvucE8nAniFnH5sd8Z841n0Brjqvai5+5dDvtqoLSKFRarSXIYjlXrfWPQHPUDnIBJQIf5Ck8/U7fl12OtbVWlrYkOsRW3pDbZLA5YV6oSsJwT+U5UO4/xaCNNutstwLHFuW5N3HgzbVtGAadS6fGoQiy3kNMpYjqffU+tLikt8weDLSSe+PB1Jz/pFIYkJS8hw+kUHAC0KCgEkKIz2/fP89cXsZuhH3h2wo17IprtLlyC7EqdMUQV02ew4pmTGVj4Q624kZ8jidcx1N7X1DcjbRxFnYRd9oz49y2ocJx/GIoK2kKQcIWlxJcQULBSPU5kHAwGPpNbpdv7VP2NSJCnoVn3Rclvs5fLpisRarKSy26pRKhhot4yT7eOpuT+vn51V/ol3Hom7lP3Qv23aK5TYNcvMTnIT2C42+qkwkSApQA55cQvBwAR3AHjVnkEFOSnBPfGgdoz+ujR7s5PjQOHjSE/bRn7eNYVvJR6nLlkdhgeSfAH3OgzjxpdYErX6aVHinH5vdnsP5ayjxnQCvOkSrTsD7aaQrPbxoH6NNTnHu07QGjRo0Bo0aNAaNGjQGjRo0DSftpNKrzrHnvkcjxOCPH6/PnQP15nVcHOKeIWo4T5J4/fAGcA/qBqM93OoaydopkG3pqKlX7pqgLlMtmgw1S6nMSAe4ZSfY2MEl1ZSkcdR21YXUXvyPqt4byG2VmvqXztS05xXVJDZyPTnVRKU+lj5QwB29qlE5UQ67cPqm2zsGvGyaS3Wb4vFLSn02zaEM1Gclv8AxupbUEMp+ferlg5xrixZPUl1B83N0689tHYkpJLdpW4+F1qW1j/7bU0gJj8z7vTYSFBKghSipKlamnbvafbbailGhbc2dR7eYfAMhcJlKJEpQHZbzuCt9f8A41qJ1rd1d9tsdlmYbu4V5waU5PKhCgNhcifOVkAJZitBT7mCrKlIQQO2SM6Dbbe7X2LtLbTdrbd2rBpFPQVPOJQpXJ91WObzzysrdcUEgFa8qISkE4SBrjN2OpnbXa+oIs116Rdl6Txyp9p0Nv6uoyvGAW05S0nGDyWR99cRNV1C9SUuNHTTa9sttyv0n3JSnQLorbRQlRaT6SyKWj+0zy5OlSW/y8lJ1MW2Wy+120VJcpm31oRaP9Usuy5KVuOy5LhUVKL0pwl57ufK1Ht+mghdzZ/evqUfbe6iFw7NsEuJkpsSg1BxUqeQkpH8Smt8FZGchtlQSPYDlSOWupgbIO2p1HW5dFl27SKVYtOsOfbZiwkBlMaUuezISA0nCcKT6hPbupSlfmOdTukIR2SnAPfA8d+50vBPIq+/n+WgE8uPfzpdGj3ZyfGgFKAxy00oCiFH4VkfvjGlKQrS6Ctj7MvYvqwpbdIUoWdvYiZ9dF5IQzAuGMwlxtwFXgyWW3QG0kcnG3FYJOrFNx0vsgyeK1qSApQ7AkHIx+gPcfI1DvV1YtcvrY64U2oHG7lttLN028+1GEiQio09YkNpjpJwHV+mWgSP++VqRNtL5pW5tgW9uDROSYVw05ioNNrUCtr1EBRbVg9lIJKCPhSdBAt1THemDe+be6UoibU7ky0quOWuGBGtuuhltpqUtTaQr6aSEoQ4pfsbePqKdQnmnVlae67JiR31oBDrYWD6iVniR7SSn2kkeePbPgkd9YazSafXafNpFVpsSoQJrBiy40lCXGpLKwpLjLiFApWlSVEFKhg8tV1i2Tv100tuU/Z5EXcrb6OpZj2nVpRh1ilNFSlJahT180y0D3gNvfiABCUq0FnAnHbWF1biAo+0gYwB+bUAUXrd2g+vj0Xcen3ftlU5iiIcS9aC7AXNbCcqfacTzaLYPYqUpOpcszcSz9waeiqWPd9Br8UqIVIpVQamoIBI/MhQwe3ftoN+668UgM/hlftT6gz7+xAIHxjOq52pe0WqXJBmV7eSpR70n3nWKAigMuB9pyM1IklEBUFpILXCEliT9Qr03E5S6t1xolo2RGHOfwT2VjI8dux7d9aW45tm2hSqjed1S6bSYEGHyqFTmKQ0lEZsqV+K4f7gK1nB/wAav8R0ESdPN83BdVUrEe5bwVU0QY8Ny3lORUsiqUJ4KUxWipJIUqSr1GsBWMR0u+m36vATtHW4tltbrfprUkFaOQVwV8jI84PbXPWFetjbn2tAv3byuw63QqmHEw6jEJ9N0NOqaWEkgHCXG1pI+6Tro08EI4pTgJ7ADwNA/kdKPGm6M/roH6NN5HQD99A7Ro0aA0aNGgNGjRoDRo14qhOMVcdhtPN2S8G0p/8ACO6j/IaDItahyIdSnt2B7gD7nwc57edQ5vvvBXaBIh7TbSMM1bdK6Wc0uIVAs0aKcpXVJ54qLDCfeEckkvOJ9NAUeXHa7+7vQ9j7GNxt01VWrFSmRqJb1HCyDUam6o/TscwCW+RBytWQAnOtT017JydtbWdue+piqzuRdijULrrT6E+suSv3KjJUPaGWuzSUoCWz6SVBI0Hv2a6ebX2m9evy6nMum+aw2k1m66onlNludioIyT6DGRhDKTxCQkKK1clq7a5bqt6yqU/Xrrq8GlUqC0XJE+c6GUMNApSSVqIAyohIA7klIx3zrmt6d5KLshapuastyprsuUzTaPSoyCuTVKg6eLUZkJBUoq8lQB49yeX5RF1s7BXxvBcLe4fVg7FqCIUsTqHt9EXzo9HUkcUPS+OUzZfDOVKUtseotCPYrQeN7dXfLqPddp/Ty3IsKyFJbSu+69Tf+Zn5cJV/CYzgKXEqR4edSAPOM6k/arpr2s2vnu3LBgSLiu2W4pybdNwSDUKq+53T/bLz6QCcN8GwhPFtAIPHOpRZjMNo/DZ4A9zx9uf3Ax/lrMBxTxT4GgxlllOFpbSFf4vnznz586ylAzoPu86foMXAnHBWMeRpx+dMaQkKLn95fk/tp+gNH/h0aNAfl0aUD76Q/OgxLbb5FxKUhX3Hnvgf7arp/R1f/U42/wD/AMW//lZerFPHJUQvjxwT7c5GQT/mBjVbehBblI2kuLahspDG2F9160WpXzLS1LMhThB8dpJR/LQWLlvMx0vSJb7bLTKealvEJbS37eRJIwPB86a23GdHqIxwdA4lOeK8hOFFQPFRwkYV5Goz6pGyOnDdJ1cVbizaNTUeCwCOEZwpKf1SdQ3ZWwm+Fqbe21WthOpCqQ40mlQZz1AvGnoq0J98x0EMB5Q9eI2o8M8FKPuUQfGAtlUKdT6xT36dVoMefDkoU09GksBbTiT2KVIUCCD9j21Ct5dG3TteDTctrbxm2ZsZYcjTrWWaQ8woDAI9EpQcY/vJOuWibwdZtjulvcnpso94Q0YkO1Sw6+0nDGAChqDMWX5Cx+b2qTnXvtXr26fK1NTRbqq1c2/qpmuRHIF20d6mrbKEhRU49hcdtJB8rdSdAOdN+9FtxI9P2n6w74pLKUqCv6z0yBcSlpKir2OONNlKgTxAUpztr5R9d/V5u7vBcLuytwX/AG1Xrasyctkz7XZkR4lbkpCQX3g4rDqm1BaQW0pa5Fam+aShZ+2tl7vbYbireZsHcK37gfZwX2KdUGZDiAQFBZSlQURjGDjuPGqT2d/RTWhb3Vo5uuyabSdrqFIg1O2raiy5kqUqYwyyVfVuSUq4tfUIcd4+ovmClJ4pynQY/wCjauakdPe27W3e9V83fbVduMpqFEol6w3aZTI8Yp9Qoprj7hZVzcfcccwW1qUU5bBSSr6CRqhFmsOSIchuQzk/iMueoCB37FIPfv8Al+da66rGtC/relWre1s02vUmZlMiHPipdac+AopXn3AeF+fkah6b0UbNw402PYT14WO7NIcaet+6KhGRHkAAJeQ0l/hyAH+HQT0HHvpwop75/UnGe2cgd8eRjtrItxSEKKG+XH/XOqzosLq32ZLJ2/3KpO69EaQfqaVfCjAqSijBCY9RYQtJcdUrGZKCB8H51nY60aVRFP8A/FnZTdbb9imtKFRrM+2XZtGjvpUUrbTJiFz1kgggOJSEnz20Fkm+ZQFL/MfjT9cBthvftdvJTDV9s74pNfZTlTrcZ8/URxnt6zC0pdZz5HqJTkYIyCCe/B5AK++gVOnaZp+gNGjRoDRo0aA1r5TQRK+t9yihooT7eXAfmVxA7lSu3/5de8kJGTqON990o2z+1dybirjqlyaVFH8Ogj80ycs+nHZGDnDjrjaCR3xnQRNbpRvb1eVO7pafXtvZKMaFSVqa/DfuKWhZqC0OpIyI7AbZKHAcOKWpPHzqeq9dFMs21qhc1wTm2aXRoDk2ZJK/a200grdKiR9h9s/764fpl2ukbObN0C0au99TX3211K4JpSEuyqpKUXn1ur8uqClemFqyri0kajHeKZM6g9+aV0zREtrsW140O6b8ksvqU4+8l0/R0d1X5eLygFqTy5KQ253Tx9we7ZG2Lj3zvqn9Vu5JeZpxjOJ29t1SU8KXT3mwlU10gfiPSUj1ElKlANuIGfbnVk2221st8WVdkgBKjhSBj/Q/66w0+BFjwY8ZthtDbKEIQhvshvj2AQAAAB4HED9hr3cU/Hb57dvOgEFv8gVnGlPzrE57FpWnyfOlU+lKygp/noMmjTeaf8GnZ5d9BjUeKuKfGnjunQUEnOlA4jjoDXO3FfNqWnKYiXPc1NpSpSC6wmVJQyVoQ402s5UfAVIZB+3PXRajXcXbQ3vetOm1ZSF245a9eturM+utt1aZ7tPUgtlCgpJAiujkkhQKkYOg6esXvbVBaqkmsXJAhN0SEipT1PvIQmLFcLqW3XSScJUWXOOPJbOt+2vA9ylEDtk4ycfPb76rfF2J3Kumx2KNuZWqU/W7ouSDMvObGjNutOU+nslEJqMl1JTxW9EhurbUnjmZLwMKxqWtnKDddsbcUW072nNy6pRWVU36pCitUiMy4puM84Tn8ZcdLS3Pj1FLx20HZLWSoqQFY7JSeOfcT5x9hnzqt3RMWZtN3rkxlZh1DeC5nYkhB9RDzJ+nSlaHB7VAlJ/n2PcHXQdVN33RSrUpe1+2tQZbvjceoJt+lOc+TtPjLBXLnltPv9NttspKh2SpxBOfy6lDbbby29rbFom31qR1NUygxExWSpKUuPkd1Pu8EpSp1asuLUEjKlKOBnGg5vqRj/U9PG6Kcp/EsytcB8EfROEZPnzr09Pb8ip7DbaVOpKS7NkWfR3XngkAla4TRURjGAT9tebqPistdOu66kJUn1bMralDkcZEB0dhnA7D41l6bB/83Har/wC5ND//AGDOgkVKEZ5hODkn8x8ntrzS6TTJ8B6lzqfHkw5CC29HebC23EnuQpKsgg/OfOvWlWU5Ol0EV1bpb6b62FmdsZZByypglihx2VpSrucFtAIPfyO+o4gdEtr2JIVJ2V3S3C2/XhSExaXVRJp63F5wXoskLS4Eg8sE/wCnt1ZvTFttr/Onl8YPcf5HQQh08bl3rUZN0bT7szoci9rBlJalS47H07dWpryC5DqLbY7D1AHG1pT2C2lYAHbUzyXWIiHZMqQGGwCVPLUlKUJAJJyewCQM5VqvG+v0uz++VjdQ7EVX8OnNf8PrsU2lS0xKfJdS7Dnq9wbZTGkgJWtaTlErA767zqQW6enjc0w1JCjZ9ZQj2OLIR9E6AOCcLKjyx7fH7jQdnbV129e9L/jlp12n1mnlxSEyYElLzS1JBCkeokFCilRwRnsfPfW6YaZSC4jAx7VKBCirHbCj3JIxg5OqwUfo+6bNxdv7YvOy6Eq0qlKo0F2JX7OfXSZJHpNq9QIQQ0tZKRla0KV+vnW1qW0vU5Zz8Wbs11GquAQkobkUa/qXHmMz0hISOc2Ght9Chj82P35aDud1enDaPdKpN3FcdCTT7gioAh3HSpK6dVYK/AWzLaIOQMYQrkk/IxriLT3P3A2IvCFtT1A19NcoNacTHtC/XY30wlyD2FOqYGUsyif7N32odGP7+U69FvdRV/Wpf9H2u6iNt49rzrkeMO36/SKgZlGqksNqWpj1FIQ5HUccQHEgqV4z2VqYb9sW1NxLTqlnXnRmKjRauwuLOZdyAEEFQWCCCFpVhSVpPJKvckg6DpmsFAPLOOxJxnI7HOO2dZdV+6TLvuH+qdW2WvasPVC79p6gbdqUp8fizoqhzp8oniOYcjFOVn3FTSioklR1PqCSnznue/8APQZNGkHjS6A0aNGg80pSiAAvj8lXbj+gOe/f9NVn3RDm6/VXY20knk5bFhU3/iPWmScJlTw6uPT46wnCx6a+b/pqVwXySVJUOOrCXFWaRbdNqVxV2WzEp9OimVMkPOgJYZaBcK8EEdsLP/p1BvR3bM5W3St57opUqDdO7E9656iJUovKixnHFmBEDivfwRH9H2/HceNBM963PQrGs+s3lcsxMamUOG9PmSV9w2hhKnCrA+e3YfPjUVdHtjVGg7Ms3bdtPjx7g3Iny7yrUZpS1NNrnq9RtkhZJPCN9O0UnsClWB5zo+ppMvcy9tuOmmJMEeBcctVyXkG1DJodP4rLCsDmBIkqab5JUDhtQzgnVj2Wmm2whtKQlA9MJSOKUgdsBPjAxoMraeCAnyB2Hcnt8dzp2jx7R40aBFICvOjgnOePfTgPvox3GgTP66NIlaVjknx/7acB99Amf10a1Fer8K3IMmr1qpRYEFhaEF58lIHMpSnv3ypSlcUpxlSuKR3VrT0zcW069SJNWpF10tyPHlJpj7xdCPpJy1NoQw6hwp9N1S3msNLws+o3jPNOg6/WP0WualFOScHv38eP9tK0vmjmVZBJwfuM9vjXGbnbvbf7OUNdzbkXbCo1ORgI9VWXn1kgJQ02MrdUe/ZCdB1bqk5LSm+aCjjwCTjjjv8ApnH90d9RDu/1LWztxV2LCt1pN37i1f8ADpFpUrLst5zAwqUpIKYbCeSHFOu/936nFKuBOuHlbk7677urpW3tpVjaSz21peqV5XRDbYqrzSElakwYLuUICwG0/VOKPFK1kICkpxy9ubmdP+xzdTsLpvs6vbw32+63JrM2hkzpEib3S3Iq1W7NspWStA45S2lS8NpQrGg76wtuUbW1WvdRfUhuRbM+7K5Fahzax2jUiiUpQbKadDL7nta+p9/qKH4gAKk+opbi5/pUyHUKbGnwJjEuNJaS81IYUFNvJUMhaSCchWcg5OqI9SuyV27kbbw6/wBRV5SUXhfFw0S3LYtSmvLXRLfkSJ7XqBCEqAlyxGEsKkue33KAAQltKb2USnwqPS4lIp0RuNEgsojR2GwAlppA4pSAOwwABgaDheouNKnbBbnQoDLsiQ9ZtZaZYQnJccXDdShI+ck9v/VrH0yKSvpw2sAcSot2XRGllKgQFohNJUO3yFAg6kV0NqCkPhK2yhXJJSSCntnI8HVd+hF1qjbJzNqhMkzJe1911y0J0t38sp5qct31EFXfARIQMfHj7aCx/wCXXndUrmU+pw7cR4HckDPcfyH66yt+p6aefLljvnGc/wAu2vNKBXlr3/cgKxk4xjvn4OR+qdBykLduxalcKrTh3LFdqzbz0UsoSpSPq2ByeiJdSC25JQErK2UqLqU+/hx92vXR9x7KuGkUWuUe8qLLgXGsMUmVFmoeZnPFLiuLSgAFnDDuADkhC/lOospm2+5jtBpe1M+h0aLQ6DX4dYRcjVVP1U5MKqNVBguRkxx/zMgscJOVBP4y3ApZV6Q5XabpjvSwH7Hp9YlW9JpNiR4S6NT48mQlluoPNINXkLLrJDy/qG3HI7nFCsTpn9mDx0Etb1WvTN6Nkb4syDOhy/4vR5sFtYQ3JaakhBLeQeSCpDiRn9R+g1j6f7pRuN08WFdtTqBqL1VtiCufKKy6p170EiQFq/NkrSsK/XXu2X22e2wtGo2ur+HNNyK9V6rFYgNFtpiNLmuvMI4kDCkoUAoAY5csdtcn0otW9TNu6tYVrJchRbHvO5aEuGpKgY7SKrLdjpyrJUDHejKBJPb99B5+jBE+B0/0yyapJS/UrHqNWtWTJayUOLhTnmUqBOT3QlGdTulJH5jkgnHc6gzpPYhNW3uFGgPuLcZ3RutMhK3eZbX/ABFwgZ7+Wyg/z1ObJSttC0+FjkP599Bwu7u01tby2JWdv7m+pRFqQZdbkx3Ch2JKZWlxiQ2oEH1G3EIX/wCIe1XJPbXDbBbmXNPqtf2P3XqMGTf9gJa9V2N+H/HKUtKTFqSGyB3WPa8lPtS6nAwFY1Oa20k9+Xx/ePxqtfV4zJ2ykWz1VUCKpybtxMZi11horU7UbfmvBmUwlCcEuNqW263yPAEKyPGAy70g7R72Wb1HUxCTQ616Nh3ooLw2iFJc5QJxUCEo9GSUpW6vJLb6Ep1YyOsraBKuR8Z+T8dxgYP3HxqPd7NuIW8uzl07bPxYctFfo8iLEXMRyY+qCQqM8oDIKUupacGPlA15umLcabu1sHZN+1Z95+pzqYlipvOtJbL0+OpUeU4EpASEqeacUOIAwRoJRTp2jRoDRo0aCl/9KlvPJ2u6YqjQ6S+ymp3tKaoqEKJ5pi5S5KXx+U8EobP2+o1G/TF/S5bT31Ho1k770BuyLikviGKlDaH9Xgn2pZKluOF2ICVcTzC20BPNTqUkhE17t2jZW83WhZe2e4NuwK1SbNsWpXYuHUIbcuJOdmSm4SW3GnAUHgGFODt2UlJHcDVZesP+ig24h2XUtzOnqpRrQet6mPTqlQKnUXpEGS2yjkpTMh4rcYcwlY/EUptRKRlkBSiFqtn5VN3X6otyN8aO7Efo9sU2Jt5R57D6XETFJKZstw4OCEOvsoSUnBSc6stG7NBJ5DAHZRJI/TJ86/PFt7vH1pdI1rxp1pS7wsy1bmUiZBXUqGHqVPJSlYdimWytlXJBQStk5Unj3Ixq5vTp/TOy5Ncj271MWXTolNkuNtJuK3Wnh9GOySuREWpxTic5UpTSgQBhLSyQNB9U0+NLrRWbfdkbh0Zu4LBu6j3FTHQCmXS5rclruPBU2SAf0PfW90Dh40ivOkz+ugdyc6BG20No4IGB3/176d+XWNXqLA4OccHv7fOn/m0HCbuWvLvS0JdvwKbTp7zz8V0R578hhpampLLow/G/FZcHDLbiRltzg6P7PvG8DZ+9ataLsO6qfRX6kxfNCuSiCdKM56nQ4jsBTvKW4wh56TxYlpS45yc4utpWtfuUqwC2GXVJW40lRT+UlOcft9tKW0Z/Lj57du/8tBGu8e8MHZ22GKixS3q/VarObpFAokJRXJqlQcTltkKweIwFOLcVkJSnJPcarUiFdcbcJ1qDbts7l9QcwNVO5q7UVJNB28gr9jEZlIypspGCGkK+oc/FfWSPaZE3L6UL73R6hTupWt8q1TbZhU1MCk0akxkNSoLa0IElDchYUlBeUlSlPJSHeKuHPgkDU07Y7T7ebT22bY2+oLdPgqkuyZCzJckPy5RWSt+Q+6VOPPEjBWtSlYATnikABEdK6P4V0yma71Abr3VudL+uaqS6ZNkmFQxJaJDZTTWsNABPYoUFBR5FWeR1OFo2JZ1i0xNHsi1qTQaeFl36WmRUMM+oQAV8UAAqIGCrGddBx7YHYfp215JEsRy4t1zi02jkonucYJHH9ex/y0FfdyvrNxuq3brbOMCuhWJClXzX23khUZ+QtKodPa7YUHUKcedAUcEeQcJ1OF03VR7JtmsXhXpSotMoUB2pzlHuUMNIUtRA+5CSMfpgahjpLZcvuJdHUvUmVsTd1Kl9RFjlBSY9Ihc4sJBB+VIR6yj5y75wBjB1lOPVmz7J2iZbddTuTe9HoFQaYeKJH8NDn1Ep1JBCuKEse/8ARffzoMXSpvluhuXKq9F3mo0Ki1mRDhXbQY8RY/Ft+ohX0wU2RzDjLjS21k/4u+mdL6EWnun1A7WrlfUSoV9f1ucfQoLR6VaitvNtFP5gtsx3Efr2Pzr1bxtQtuN89qN6Y/pMxqu+vbuqpTGJUuDNHqxDyHZttuUw2MK+X1aJqV7d9asJbTcaJTd17MXH4xmMuyqtSH0q9V4gE8RDlIbBPjh20FiGwrjhXkE/5Z7f6aC2gk5Hc4yf28a09UuKl25GE24atCpscr4B2a+hlCldyQlSj7jhK1Afb/PXubkh5LbiZCS2rBS4hSClz5+58gZ7fGg9IaQnASnsDkfv9z99NVHbWrmeWccchRHbOfj7fGsiVch304eNBhEdkJU2lPEKznj7fJJPj7kk6hnZ246e5vZvzZcdQ+pp1w0mrOsekUjhKocFAIPg8lRXM/rqbdQVTmplndX9WZW2yunbkWcxMad5AOtzKRI9JTPH5StmoBfI9/w9Br+n3+BW9vb1Aba0SJIhswrqgXRwUlZSt6q01hx5xC1E5Cn2X/aPaD2AGrAtjCAAnAT2A89h41FNufhdTF6IUr0lPWTa73BKk8VkTa2lRwO5xlsZP21K7Y4toT9gNA7A+2uD3nt6beO1l6WfT4ynZdaoE+BHGEABxxgoQrLh9P2qVn3ka73Xne4FxHPsQscSfgkEdtBEXSbc1Lujpu23qFJlOSWWrYgU58qYW2puRFbEZ9opUBkpeZfQSO3tz3HuPKdHynbHpV9bASXI8dzbC65kWBE9cvSP4PPWJtOfdWcjLnrPpxnICMHuNJ0fCbBc3ps+oqejrpO61edgwXXD/wAjAkJYfj+mjP4ba/VccAT2JUs+SdFoGBZvXHuTbUZiVIk7g2RRrvW57A3HVAfcgFoYHL3hba+/ghWPOgsenOPdp2sbQAGAc9yf8ydZNAaNGjQVtmNqZ6/2krg+mzM2hfDUgrI+oeFYaDjIJPlKPSV28ZJ++u86nPZ047rOlPNAsmuewucUEfQPHJxg5OuP6gUNUPfDYbcKbITGp9OuCqUOY+ErzzqFMebjIUU4wlchLSPd2C3GtTbWKVTa3Q59GrcdMmnzozzExC0gofZWgpWFAeQpOfGg5/ZxEaPtLY0WE425GRbtNS0tvHBxsRmwlScdsEYIxqsXVn/RfbN7/RVXFtvGpu3F6NJcUZFOgJTT6kTlQTJjt8QlRV/37Y5+5RWl3CQmVejusVJnaX/hpXZDblb2tq0qyZq/TKAtmISIroR2ISuOpjBPnzqeWEupZSh1xS1p7KUpIBUR89u3fQVS6C+heL0hUKdVqvd02q3jcUVMavNRZYXR/wAJ91UdUdCmW3eQaWAS4T7lOYAB1bLQBg5H97RoDSgffSacPGgTx2Gj82hXnSZ/XQP01XnWluG5aNbMNyq1+uQKTAjFAelz3gzHbKjxTzdUQkEnGMkZyB/eGtCnd/bM0yjV87lWuql3G99PRp6KxFMaovc0p9Fh0rCXnColISjv+YYyO4dqplC88055DiRyOMad49umMrcW2lakgKI7gHIz++B/tpjjrgc4ENjP5cqOcY7nGPjQZtQT1ibiKsrZms27RkiZdV9Mqta3KYiWY8qXLmYYUphQPLk2h31BjHuCU5BVkN3N6mGaLXTt1s/b724O4DvZqkU9xJhQ8pBC6jMGW4iADyCMlxX4fgK17tsNiKrBugbt7z3Uq8r8eaUmOS0WqXQUr48mafGUSlGOIT66h6qxzOQHFJ0EiWDaETb+wrasKmzJE5i3qTDpjMp/iHJCI7SGw45xAHJWORwPOoZogd3o6oKxfDyI39V9lmpFuUSQ3J5fVV2ZHQqovkoILX07Bbj8HAtJLq1jBwdTddtyUuzLZrN21l5TVOocCRVZq+5UhplJcJA+xCF9tRJ0d2hUaPs01eVdjQ49b3LqUu+qs3C5JYadqLnrJQnl7goMeghY+FJONB1nUHtw5u1s3dm3zD7zEypQvVp7jDnpOicw4l6OrIIxh5tjv9v01AF17k/1jpPSb1Ktzv4jU6tXoVsSmochtuOVVyJ6MwrAGVOMPxRhCcDKFgjtq4akBC+QSpI7rUrtke4HH8++qHVi1Hm9pt89jIEiLTbn2cur+vtlNx4hJpdPW6mpxVRQBzdWSZjRWeXFTuD86Cze79Cn1as2DUoVjOXRApNwqmVCKx9KA5GepU6MFlMpbaHCHHmPalS+3cgActaO19sqmmlbbVVm2ZNMVSbwq9aMCNVS2zBp81c91AdQ24WnjiRHynKwlXZBxqZLeq9Guyg065aNJTIhVaGzPjvtFSQ8y63zQoEYJBSvI/01tPTQfzoTnJOPI7+dA5o5aSeRVkZyexOsmmJThP8Ame/fT9A0n7arr1GFq3t9Ng9xZ/1DdOh3DULZkOspSoKfqsJTMZDifzFPqoQe3b76sXgfbUIdWDC1WbaE1qH67kDcK1H0LC+JaP8AFo6SQf2URoNbX5Mm1Os23pDqkvw7/sOVS4yG0ALjyKTL+pUtw4/IpFQCP31YBPj/AD8/vqBNxn1P9Xm0NNp0hlTkG3ron1JlGA6zFc+iQhxR+ELdQE/qW/31O7JUpsciScYJPzj5/Y6DNrEW0er6vH3dhn9s/wDudZdNV50FbtjkJT1h9TYyrjmzTgkkZNKdJONMWB/8o0rHn/gmO/7VxWP99O2VUtnrC6mFracS3ws1w82yPUApjoJST2UB4OPkY0jaSf6RHLvEuf8ABMBRHjIrhB0ElXBdt9z77qtlWKmjRv6v0eDVpUiqNuufVmS5JQmM2ElAawIpUZHJ0J549Fw+Itt3q7rdbj3Q4/YTDUxml0iRatPZn+q9WKhMp8F52H+UY9GRVac2XeIT6cjn4QrU2XXtZaF4VZNdqqKxFqP0whuSqPXp9KdfYSpS0NvKhvNF5KFLcUgL5cC67w4+ovl44Wye1NLqUGrUuyafBk02YZ0IxeTKI7n8NRTOLbaFBCGvo22mvRSPT/DQrjzSFaDgrQ3+um4rmsuiyrfpaBd1NaqnoQ33JMmHAXTRI/ijqUIIbjLmByC22spUtXBxK3OSm25lcem81YktIGThKpCAU/oR6Z/3P7nXFWD0/wC2G2EtiVYkCvUsMrS4IwuiqOxHFJioioLkdyQpl3jHaabTzQriGm8YKUkSPwQe5T30EXdQ22jm7u0l07fsVFynSZ8USoMxKiyGJ0ZbT8dZdT3bAdbaJV3PHn9tejYzdNjeHbWkXouGqFPWlUCtU7j7qZU2FKbmMEHJ4pcSUg/KeJ+dSA6w2tzmU9+2D8jGO2ft9xqt95RK30v3/X92KDTZVX20vWWZ94QYjBdl0ColCUqqbDaMKfjOBGZDX52zl1BxyToM27Vu3Fsrug51MWJS5tagTqa3Bv8AorEk83obCQG6pFQohKpLKMJWlZ4KaT/dV7lTrZt421f1r028bNrUep0aqx0vQ5TQVwdSe394BQIOUlKgFA5BAOlpNWo9z0eDWqPVIVTgVeK1IjTIy0vsy46k80LbWnKVpUlWQfB8jUBXFt3fXTxXKrulsU3IrdpVSQmVXduigr9q+70ujkEcHhj1DGV7F/8AMY7qa4hZhKuQzxUPIwf007XC7WbtWdu9QHa/ZtVdeEKYqDUoUmKtiZTZaB+JEksK9zbqM4PkE/lynGu4QcoB+4+fP89A8D76dpB40ugarzpNOwPtowNBGe8tqybrpEFdLpkqfNo1Vj1BpNPqy6dOQ42hfExnUqDa3QFnDMj8BYV+JhPfUQXBYO5823olDqW2a6zT6/FrUKvzGYdGNxrpklcf/s517nFhoXIw4l9TSVt8Gmgla3P+cTafggLK+KeRGCePfH21Ge/Tm78DbO4pWwkGmy70cjobgJmKbSltRWAVJLn4ZWkLU4A4eHbuDk5D17ob22RtBT6e9dsuU7PqyjGo9Hp0Zc2oViUkAqYitI9ziu6U5UEpypOSM6r7ulee4d30+n3VvvWpW0e3UjCINm0aovSLouuStwhuO4qK2XmQUBpSo8VK18XXea0hHIc1tJ0wdY8aVKva7d2bTtm8642HahcSacuu1xDa1HMAfUKESKwn/wCHRj2p88RqxW23TbYtkVr+u9beqF53y4Aly57iV9TLbIccXxjgpDcVtJdWlKGEIHDiO/nQRhYVpb/1mix6btDaNo9P1hSEqfhcqcKrcMhZUtTb0iPgRmStJC1eqp1wFXuPIa7zpVu7ca7rPudu/wC5G7kVRbwqtCpVfTDjRf4jDjEI9cNRx6QAeDzYx5DeT31Im411Qttdvbpv9UEPpt2kzKqWEK4mSWWi5xJ+VKUnj+udcT0fWO/YXTJt1b892U5LXRmqpJ+qyHW35i1THG1f+Rcgo/8AToNV1oRqtO2Cq5iU2bUKSzMp8y5YUB1TUyVQGpSFz0MrGPf9OlauORlKVj51M1t1OiV+3aZW7dkR5VJnxmpdPejgBpyMtIU0tsDtxKCCP01kmRIM0PQJcf6hDiCFtODkhaV5BBCspPZJ8jGO3zqv3SzUa5tuq5+mK7ZshUjbuQmRbk+UkAVG2ZKlKirSorPqeioLjqShKUtj0EAaCx4bQPH3z+Y/v/8A3quPVbEjbdTbZ6nqVDT9Tt7Oai3AlppS1z7emK9CYwpLagVFr1G5COeUBSM41Y5sqKAV8gT3wcZGfjt9tae5rdo12USp2zcEJubTKvDXBnRXs+m8w4haVhWO/cEjzoIZ6RKy/Q7Fe2Jrj6v6x7USW7fmpKSTKgLSV06WglRHF2NwPtPFKmnkgJCQBPyFc0BfJKsgHI7g/qNUE22ql17OVem7l3JInS39qYZ2v3Op0Njl6dFaU5JpVaaZaILgQh5v1Hl90t+vwTkOFV9Ka9GkQI70SUmSyptJaeRji4jHtUCn2kEdwU9j8dtB6x40hP20fl0fm0ByOoF6sJ1XMTbG0qNFakKufcu34kkKB5MxmHXJrrox5IETU94GoH3tq63uoTYazUxXOMmo12tfUBWAFxKY4hDPft7/AKpRz5Hp9tBqbPXGurrW3Krjjf0rlkWRQbabR2WX0T3np3qEAcklKkcCg9iME6sUyU+mAOPbIOO4Bz3A/bVd+kV9mvzN4NxFxStVwbk1NiFUnGwlc2nxUMx2AFAAqQhSHkpz+2rEtYSgY8aDJpqvOlHjSK86CtqX32f6Q2RCafcRGkbNtynmUrIQ48itKShagOxUE+0H7dtZHfSR/SGpDZWt5WzICk/3Uo/jo7k/c5Vj/wAuszMJ+d16VGvxIClQ6NtTHpU+YVe1uRJqy3o7XHycpYdORrZ7aoqdV6m947ilRFKh0uJbltxZhYGQ63EemSWULycoAmxnD2HuXjvx0E6JOR9/10aa0MIA+PjBz2+NPA++gTRoPzo0B3+dYX4rD/P1m+aVoLakn8pSfII8H+es2jyOP30FWbgpF6dH06r3rYlKeuLZp15NRqtsw0kz7bXkmQ/TWzhK4qkqLrjOcN+n+GG0clIsBaN32tfFEh3PZ9xU6r06TxQmXBc9VpWMZQFJPsUFdilXf4I10DsZh7PqNIXkFJyn4OAR+xx31Xa8OnS6bEuqTuR0p1ui2jWJuRWbcqiXl2zVElAQHXYzKkqivIzzC2Cnl6fuzyVkNtuxsldK7yVvDsRc8e0r69FEeqsymC9TbjjI7oZnNhQLJBQlP1bf4vppUgZ/D44LX6urIarLO329DCNrb95o9WkVySBDkBeOLkWeE+i8hROE+5KueUYynWjoXWDTrNlIsjqktxW1N2pcQ2w9NUuTRKsEtJ9STEqCUltCEFTZWHsFv1EAlRV2nG8LHszcm0p1p33bsCtUWpsBqXEmtBTTiPIUTggKSTyBSfaruDnvoOoaWVoC+KkZ/uqTgj9NPStKlFHyPOqxRrP6ounpCabtTLp+7O3sBP8AyVAr0wx7giNcRhhmoq/DebSpRUPWStYSEoCsDWxtjrd2feqMOh7mpr+1ty1EoAo140p2CvAAHqJeILKmVLV6aHOSeSk9h30Fj9GvM28pSEqS5yB7hXDIIP6g41n5HQCvOsZZZU56im0leOPIgZx9v9dZPzaXA0GFLLaccUYGScDsO/nI07gkIDaRxSOwA7dhrJgaafnQVq/pEZMmL0f7iKivuMOlmAkKStSU4NQioKSU4Pu54x86sW2cpbEVY9EABIQBjGEkfsCP99Qb1Z/U1+HtrthCgt1A3juFR2ZsBxSQl+mw1mfLUoKBJShEXl7fkJHzqVr0uaLZtmXDeT4xHoVKlVNYX7AtDDKnFZ+eOABnQU6gbnbj0rqGuTqHuq9WYu2sW66jtZMhKUtbFHjsobVCqCkpwjg7Mwhx1akqR66EpOFe2Vt/KajbXd/bvqcph+lYanNWHdzg4JbXRai8UsuuLUnLaWJpjOckY5ep3JSka9/TPtvSl9HNsWbdcr+KRLptlyfV3XeQ9dNT9SS6kqSQv2iQpAIOdcZbUStb49NO4XTPfshqo3/ZzMi15/1LrqTIkNpWukVJRTlxSHPTjOc1YBU07nkE4UFtWGvSaCMJB8qx8qPcn+Z76fhPLPz/AO3/APuoMs/fms3b052Ru5RodMnVS5zQ4L3pKJiMyJk5iE+4OKiSht1xf4YVy9uD31lqW9G4Ft0ys/x+27YRItmqfRVOqzayqm0wsqjRX2lNgoffLi/rG2UNcCVONuePw/UDhepOz6PYG48PeqbKbbs29WGLC3MpKnG40WdT5XqR4tReXyQsux3JDbZcCvU9FxKEEd8930rVyqL21kbcVZTn8T2sqz9jzJSWkttTEQ22zHfQklRSFxHYzhTnssrR/d11V025Tt79npNu3jRZ1Lg3bQEqlQpkdBlQFuspV70kFKX2FqQscfDjXbxqsXR3fNx0He66Nvr/AJk5yvVumCFWDKdX6Ttw0H0ost2OV/2v1UGRAmKX5JKh/d0F30nkO/5vB/lp6eXHv50iB8/PfSk/bQBP21XLcWstP9WdEqNceZplD2p2+qN0vzjLR+OqoPmOtLjak5bbZagOOF0K7+rxAyNWM1Rjc627y3L6ybp2TkW/UnLRutNqVWu1F9pao/8AB6UiVJMJvkezcmWUNKcQpHFXPCHD6mAsJ0g2+5b/AE22IiRIbkPVinm4Xi2wtpCHai6ucptCVkqCUGTwBUckIye51MTbaEIShH5UgAfPYaxQxG+la+kDYZUgFv0scCnyCMdu4+2vToDWAugFWVYCT3PwOw7HP7/Gs+tbU5DEVKpb7jbaIraluOr7obQMElYJHYBPLOf7ughfah2pXD1Hby3WGeFNp7dAtJhxz+0dkQ2XZTyg3xBSn/tNAznv516emSfPuaFuNfkj6IsXLuFV3Ke9Db4NuRYSGqa09gk5KhAyTnuf01H+0F5xdvemTcrqOqj1Skx7trNx3xT49W5tPORnV+hTWEhRUpIdYjRPTGfDyf2Eu9MVgP7Y9P8AYVlzYLsCdCokdyoRHFpUpia+PXkt8kgA8X3XE8sZPySe+glEJCUhKfA7D50/TU+0AadoGq86TTsD7aMDQGBowNJyOlHjQNPzppQhWMjODkZ/bGnq86TQaqvW3QblpsmhXDSYtSgTUESIcpoONPJIIIKVZHzquKek++trW/qum7fK6qIYSguHbFyP/wAVt9xrko/ScFfisIPy4lXLPz3xq0JSkjBTnvnv376RTaFYPFPsVkfv/wBHQVvtPqvNKrlJsfqKsCo7W3JLZUW6jOUlduzHhlPCNUAeIKk+9LbmD/d88SZpuC17P3FtxdFuuh0y5aJU0gvxZjSJMV9vGR6gPJCuJORjsD3GDr33NZlq3nRJVtXZbtPrVJm4+ohT4yX2XCDlJKVAjKSBg+RgY8DUE1HpCas55uodPm794bYLhoIj0uM65V6KkLWVLP8AD5S1jJJPZCkJGfGg1b3TvuBsC+i4+l6+arLgQj6j1g3HPMilT2CniGI8pzLkJSQHFpcKlI5htJThSsyRtFv7D3NqNUtGuWzWrKvehxxJqNsVphDcn0QeCpMV3lwlxvVBQH0AJ7t8ko5J5cZQd+b72xvKDt11TxaPS1Vl0s0C86U0tujVJfLgiPI9Qn6WYSnn7j6ZCwlPfXc7z9P1l71RY8qsJkUe6aSkO0O5qY4Y9Spj6FckLbcSQVISruUL5JJ74zg6CU45eU0kyEoS4fzJQrkkH7AkDOPvgfsNZ9VhHUFu/seIVM6lrBZft9lCm39wrZU9OhuKTyLZfp7bJeYUpKQFqClI9QqKQlOEiWdtN9NqN4YSp23G4tHriQVKXHYfCZTKErKSXI7iUutg8VfmR38g4wdBIumq86Y2SR37H/rv/PT/AM2grtJSu4uu+JAqrTLkW09t3p1OQtXLg/NnIZcdAPgltlbf7Z/xHW66tqhIGy8yzodbi02pX7UadZsZ6Uwp5OalJajPAIT3OGFvr+3s1pYwUnr/AKozy/DkbRxHT+X8yKw6E98ZH5jrBv8AOLuHqN6fduXGvXpjtVrN1TQlaw+y7ToI+kWFJUAEF5/uFdjoJ/o1HptCpEGhUqGmLBprDcSIwPytMtpCEIHc9gkADP8AvqvnUnS07YbhWR1L0H04piz4dmXo+8+lEc29NfSn13irJDkeSY7jakcVkq4qJR21ZBnkpscvPfPbHfOubv2y7c3JtesWDdlPbmUmtxDGkMqQlWR5ChyyOSVYUg4yFIyPGghDaixrcaru6nTjX6bKXQaHc8O8qE01zp6WIU1YmNojqjFCkhifGkhJCvgD8vt1IbvTvtxJeps1lmvxanSZ8mptVRquTUS3pb7KWHn3XQ9zeWppCWgpZVwb9iOKPbqvXTtcV52/ufZEe/K1Keqr9Gn7T3Iotq9L+N0ZZnUt9a38uqVIpzz7wKFcXC7lXI4xdNhKCwkAK4kDAVnIHwDn5Ggww4TMOOzGbW+sMoS0FuuqW4sJ8FaiSVE4yVE5P89VVrXTVfiuvy39+KbJU5ZbcCTPnCRIyiLUFU005KGWz4K0paWojzx76trppQgnKk/9eNAN4SgD7DHfPx++n/m07Tfy6BcDWL0WjyJQnKjyPbyRjBP3IwNZR40hP20DQngkJB7J+/c/5nTx403Rn9dA/VdesydX69alrbH2lP8ApanupcMegSXGmyuQxSEoceqEhtP5VBDLeFcvh3thZQROdWrUajMS6lUZbMeHAaVIlOuuJQhllKCStZyTj+XxqqtF3OQzTb462b9bkSaWYf8ABdt6OEOCQuAp1LbfohKch2pSgwrKmuaGyz7+Gg6vcKBTNwt2rF6b7KcZjW3t2IF13VEilQbYYjKT/B6aSELR+I80HFtL4n0GuQ/N3sdFdQ+wh1taXEqzhaSCFjPnt27+dRZ09bY1yw7I+vvyYioXxdExVwXPIRn001J5CErab96k8WUIQwgoITxaylKAop1LI8f56B2jTSfto5HQNJUVlAGAADy/n41k0aNAmBrD6qXFuMtOe9sgKH2yM6z6bxHft3PkjQGP56XA0ujQJgaafnT9JgfbQNz+usJZC3SSVcTg4CsDt+37azq7J0iScaDjd1dtbd3ZsWubd3TD+opdchriup9NC/TUsgpeQlYKOba0hwFQPu1HexG4t4MVyubE7q1OPNviy22ZDdSab9IXJRnQhLFRabIBKkkqaf8ATSWkvpwFpCuCZ0W2F+c98fJHg51AfUlQlUa6dut7YE1cWbaNyQqTMPEqafpVWkNQpKFkKTjgpbTwyTwLWRjkdBOcfgtCStxLoUAor7cXM4AOASO+Mj7ahHcbYvZjdytVSp2rWIFu7h0GTHD9y2k+23XabICE+miSprKnEKawksvJwUKyCnsoS7c1wQrSt6p3VVXvTgUeBInTHHFDCEMoKyT/AJHxqrOy/THFufZqy9zadeFQtzdqtwf6ySL2pjQD/OoqEssSYq1ht9tKVtt+k6lSB6fZI0HVyJ/W7tI2xCaotn76wiFJcejut2rV0OrcK/VcQr1Iq2khXDCAFnGT3zpzfVluTbyv4XuT0gbtRqyEcy3asBmvwikf/FIW2lKiO4Sf99Y49g9cdmsiNbW/e398tOoCXVXTaa6YqIEjADIgOAHkBk80n9NB3Q6zqLyold6WLauWXE4lyq0W+I8aDMSpXLm1FlID4WlJCSFkZWlRHYp0Gp2s3Ht/dXq8q93QaPctAnQ9sYcGTSK9R1wJsf8A7WfWsuIWlQJSPRICVEHlrcrfUOvmZWJshLNIpe0Lcd551ziyzKdrCzgcsYUUMnuPI/TXN2JeVdvPrWqNcq239etJCNp1MPw7iYjhS1CrkJUFsvKQG8+rjkOa0p5eMDXH1ZjprvbqI3cldQda29msibRbbt6NVKg2iUlxqGhUpRQFIJb9SYCF88pCfg6C8LLqikFH4iD7gsKKuSfgghODkfrrI4w26CFoSVH5+fnH+WdVipPTdRvpk1vpv6mL0t2NA5Ro0eFX01+iMDj3bEWQtaRxPvGXR+bvy1srd3n3B2VrtN2/6mJEWZFq00QqBf0KIiLTZ7i0J9OPObSeMSQVBxQUPwlJwB7gdBw3VFtWKFf0ncKoXHUaPZ16zKZHqNTYk5XbNysemzS60kKylLHAmK+ObSeDmSCcK1Pexe6krce2l065oC6Ve9sLbpd4UlbZQqDUwhJJbSpSiqM6CXWXOR5sqQrPfXW3TbdBvi3ahbFyU1ufSq1FXClMuKAEiOsHKUqSc9x7h3z21UzpJpF62n1M7qWGtuM7SbVolKp9SqHLlJqv4jzlFfUkISEqTTXfp14J7xUqV7u+guk1z9NBX2VxHIfrjvp2sTLgcbB9vtykgK5YIOCM/cY76y6Az+ul/NpNOHjQLpqvOgn7aTQGm+7OPkq7ft86eB99IUjP886CkPUX1D25fu80zpxksXJOoNvNszazQaDSn51Vu6YUtvtU5pDaCliGhv8AFdfU43zUlTY7Nr9STNsdhKleFx0XeXfS2KfDr9BWk2dasR9LtKtGIj2oDfo4aflFPuU6Bjlx4hKUNpbsd9LGI7x2/JV+UeT5P76eEBPbKv5qJOgahH4YRx4pHYDx2+PGNPz+ulCU48aQ/OgX82naQeNLoDRo0aA0aNNJ+2gCftpR415VtSDIEhElzghBBYCU8Vn4OSM/669KOXEZ7H5GgdppP207SYH20CeU+7Sccdk6X8uj82gTUe79bcI3b2lufbv0ov1dbpsiNTXpTXqNRp3pKVHfVgZAQ6lCuQ751IR+dNKRnn4x5/UaCtlT3Kj709A1f3HCVOSK7trVvqwWylKJrcJ5qQAD3AS+h0A/IGp9tFpLdqUZPFIAp8fsPyj8NPgeAP21Uy1XpDPTF1W22Hlfw23K/fVNpUcABMWKYX1AaTj49SQ4rv8A4seABq1thOrfsW3HnVZW5SYalHxkllBPjQb7z2+dYHY4UjinkP0CiB5z4HbWfj7s/OsTrnDuEqWeSU4Az5IGT+3nQVy2RW851fdSDQd/+iN2a0ltPIBANPfWex9v98n2j9++sfT5a9kbkMbzG4Lbp9xUOdufWBHRWYKZTDoEeGy7wD4V7UvtPp4/lz47cde7p4i06tbv797mtVNbr1TvONbi2OSfQSmk0+MlLrfYnOZDgV3x7fvro+lb6Z/a2TPiSmZbEq7bpdYksuc2n0Krs0h1B8FKgApJ+2NBo7u6NNjqvU27htGgytvbij8Exa3Zsn+FSIyEuer7W0ZYd5EemeTR9jmP7oxoZG5CrXgu7NdaNHp7tOqLv0EC8JEEJoFfaDaVo9deSIU7iHCUr9NsracW0r8rabMqjtrZcZ4+1wFKsEgkYx5HfOPnWtuK2rduilzKFctFg1SnVFpceZElsJdYkNrTxUhxKgQQQcd/jtoK8UefeXSvX7bsm+b4/rJtBWJDdEpNfq6kpqdvzgg+hHlPoSlDsd1SSlDyhyQo8Fqxx1ZaOwlKfUdZSl5fZxQTjJGfHcnGSSP31VGZZrey9egbC7jSZl3bHbkIZtyiN15/6h2gVHK1Ip7jnZxUV1AQhhwLUpt1DSPaPfrvOna8rht2ZL6ctxqm5KuOzIUddFqclWXLhoBARHmcz+Z9GPTfAzhzh7lcuSgnwAaXA1jYIU0k+7uBnnjln9cfOnk/bQLgaXSDxpdAmB9tGBpdGgNNV50E/bR+bQKPGkV50fl0fm0CZ/XS4z50uBpdAaNGjQGjRo0BpMD7aXRoGH82nDxpunDxoF00KSSR8jzp2mcUpUSPJ86AyD3HjS+E+7TOHs4IXwP+f++sDsIPNlK3FFf+LkR/oO2gyOSWGz+K82j/AA8lgA6xNVGnyMqanMuJHY4UCPn51hVQKe42UPt+py8lff8A31iFApjbDkVhlKGl/mSjsQoDII0FPrbnuvdO/WS86416ou2+2kpPYHjTWkp+3xjVqdraozUtsLQqjfp+lMocB9v01Ep4rjoUME/odVUtONCXsJ1gyFKcf9G7b3KVFACsimsE+0ADyPtq0Oy8aGjZuw48aOpthm2qY20hWQUpEVsAf5DQdopwIxlKjn7a8UupQ461pW+nmgElPMg+B5AH66zPQmnlFYccQr54KPx+mvM3T1shyQ1MlfkVhC1eDj/3GghHptqtFo+wNRrj7iKdFauC7pUqa6ohsFFZmJ9VauxUAniCrz7MfGtn0XRPoOljbSMtDiSKI04kuNFJUlalKSoY/ulJBB+U4Ooyk0d93o73akIqE5tuEdxG/QDuUFCJ9UUkYOfBwe+px2CpiI+yO3YYkTUtItKkJQ3zASEiG0ABoJK0mByz8/8AXnSJGE4/3Vn/AF0vPj246Dk9ytvLe3Ssiv2BcTKFwa9BdguH0kLLC1Jy2+gKBw60sB1tXlKgFDv31V2rXXeNSpjFQrEd6sbwdONdhPXCmmw/UertvyzhbrakkN5kQT9SplKeQfiKCEAcM3K4FayocgFdjhRHjVbt5nxsl1DWvvzMisx7OuSmmzLumhSkNxHVOBdNlPISQlxIcLrKlrB9NDqcY5HQWAtW4aTdFt0u5aLOEqn1WGzNiPhKkh1l1AWhWFe4ZSQcK7/fvraJUoqJP5Pg6rz0u1E2JVbw6Z6uHosux6tJmW7Gf5r+otiQ56kNbTqslxLanSyrJPAo49hx1YVnPpJyrJwMnt3/AF7ffQPStJTySrI0vI6Tjx8aUD76BR40hP207TVedAmjP66NKB99AmlTpcDS6A0aNGgNGjRoDRo0aA0aNGgaR9tMDv4vp8fHzrLpDn40CE/bSaNGgNaK7Lto1m0tys1+amPDRIixSccj6smQ2wyAB3ytxxKB+ut7rj9zbKdv+2TbrdS/h6/4pS6j9R9P6pH0c5iUAATjJLGB9ie3fQaup702PRrabuuoVl4UgLnodksw3XlRzT0yFTvXCUHh6Sojra+35xxHdSdeq0dyKbek2bSoTNQptTprEWXJi1CKWi21KS59O4k44uoUWX0hSVDu3gjXB3J01x69P3IeRdkgMXpQKrRaRD+l4tUBypMsioONqScr+oejxn1884cSsp4lxzlJVIsezrLiVSbbFp0enSJ7SVTHIcFDC5YaCuHqFIBUE818Qew5Kx50FTKbcNJoXRx1E7mVSeE0+/rgvGVCb4D1GHJLiqaww5xUQCXW289zj1P01cGw6JJtqx7etyY4lx+lUqLBcWnwVNNJQT/+nVLZlAdn9FmyWzU71q6d4bkpTVacDnCT9LLkuVWZJTxIPsCCCR45Dx21exs82wvzkZB8Eg+M+NBk4Ajv/p21ifbTjuVkHAICvgkDWXP66xucwlxSVeBkf9fy0FJb/uir0Popu+lUJxIrN63pcVr09v0PWXIcn3DMZcbSnB/EU0ZASMeSjVzLfodLtihU626LF+np1JiswYjJUV+my0gIQnkoknCQBknP31TSi/TVG/dldv6hxXSH93NxK64wFFOZVNk1JcTkpJCiULdDgBOD6Yzyxq7aAlCeATgDsB50DtGf10aUD76BM/rrht5bCi7pbY3btvMDIbuaiyqaFyEktsrcbKUOkYI9ilJc++U67k/OmLbQvKVp5BScEHuCB+nj50FLzuffEyyKH1A1Wlym9wdknplubk0BlLIdmwXUx/rHke0eQ01PY4cWyOaT5Vq49IqMWsUyJVoD6Xos1lEhhxHhbaxySR3OexGq63LQ6RavVVUaRW6Yh63N+bXepk5IdcX6tTpsdYWlYThTfOC8UgIUnPpk/m767jpNaqsHYS3rerNQTPkW1JqlspkhpTYdZptRkwWVcVEkZbjN/Ogl7Th40wJPIlX5fjSpJxoH6TA+2geNLoEwNLo0aA0aNGgNGjRoDRo0aA0aNGgNGjRoDRo0aBMDTT86fppH20CaYttC/wA6c+P9Dkf66fo0DPTRnPH9f55z/vryVSMtynSGIyPc42pAAVjygj417uSftrzvJK1exfADz4wOw7n+WRoKYWEyyKj0OrbZU2RbdVb/ALVSgg/1dQVdiSDlSM9/Hx51dZKSE4Pn51Tzp72t3aVfe3tG3TsByjU7YSj1ClUmsMTAtmuTZYbjtvNNk8vTTCC+fL/vHFf4U4uAytLraXUK5JUOSSM9we486DJpq88XP/J/76drEtawFZ8AgeR+U4yf99BTDbh41venb2h0pv15NA3C3NrdVCvT/wCXhmVKiocHbllT0xhsJzgj1j/dSRc5JeLaClbef7x74z+mfjVN+nCzNyqX1UX5LuHb2VRKPQ5l0Ot1eSkhFVRWKnFlRUx1FASsIRFXn3Hip1Y7Zxq5MZXJlHt48fbjt2x2x2J/30GRfLthX76dy+2gD76TQL+bSH504eNGB9tBBHVhEq1NtS1906Sp1TO2d2U+7aw02kqcco7KH2Z3pj/EliS46R25elg62PSTV6dcWysav0iYqZAqNxXPLiSCkJU8y5XZy0LUlIAClJIJAGAfGu33Ts//AIh7e3RYP8UVAFy0eXRzKDfqGMJDKmlOBORkpSsqwVd/21zPS9tDM2I2KtXayo1dNUl0ZmQqRKSwWUrcfkuyFAIKlY4l7jnPfjn50Epq93b40aXHfRx/XQKPGl0aNAaNGjQGjRo0Bo0aNAaNGjQGjRo0Bo0aNAaNGjQGjRo0DVaTRo0DSBnSKA9MDA7kZ/Xvo0aBG2GsI9mSgYST3Kew8HyNZEpAT2z5Pk5+dGjQGgpST3SPA+P10aNBjKE+qpWO4SMH7fm1kSOPFIJxj5OT/no0aB+jRo0CDxpdGjQY1JSsKQtIUkpwQRkEd9KlKUghKQBknsPnJ0aNA/Ro0aA0aNGgNGjRoDRo0aA0aNGgNGjRoDRo0aD/2Q==</dessin>
+	<Upload newline="1" title="0" style="upload" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<label20012109284750212094 newline="0" title="1" style="lbl" label="...N - Normale" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284751212095 newline="0" title="1" style="lbl" label="...A - Anthéromatose" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284752212096 newline="0" title="1" style="lbl" label="...AC - Anthéromatose calcifié" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284753212097 newline="0" title="1" style="lbl" label="...S - Sténose de ..." unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284754212098 newline="0" title="1" style="lbl" label="...SC - Sténose calcifié de ..." unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284755212099 newline="0" title="1" style="lbl" label="...O - Occluse" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284756212100 newline="0" title="1" style="lbl" label="...OC - Occluse collatéralisée ..." unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<label20012109284757212101 newline="0" title="1" style="lbl" label="...OR - Occluse remplie par ..." unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<checkbox20012109284758212103 newline="1" title="0" style="chk" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">on</checkbox20012109284758212103>
+	<text20012109284759212105 newline="1" length="50" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">tronc commun</text20012109284759212105>
+	<text20012109284760212107 newline="1" length="50" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">iva prox</text20012109284760212107>
+	<text20012109284761212109 newline="1" length="50" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">iva moy </text20012109284761212109>
+	<text20012109284763212113 newline="1" length="50" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">iva dis</text20012109284763212113>
+	<text20012109284764212115 newline="1" length="50" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">diag 1</text20012109284764212115>
+	<text20012109284764212115-1 newline="1" length="50" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">diag 2</text20012109284764212115-1>
+	<label20012109284798212185 newline="1" title="1" style="lbl" label="Attitude proposée" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField=""/>
+	<chk_attprop_reassur newline="0" title="0" style="chk" label="" unformattedLabel="" isModified="0" toPrint="0" indentation="" xmlStyle="" nextField="">on</chk_attprop_reassur>
+	<lbl_attprop_medinstau newline="0" title="1" style="lbl" label="...Trt &lt;span style=&quot;color:blue;font-weight:900&quot;&gt;médical&lt;/span&gt; à instaurer" unformattedLabel="...Trt médical à instaurer" isModified="0" toPrint="0" indentation="" xmlStyle="" nextField=""/>
+	<chk_attprop_medinstau newline="0" title="0" style="chk" label="" unformattedLabel="" isModified="0" toPrint="0" indentation="" xmlStyle="" nextField="">on</chk_attprop_medinstau>
+	<chk_attprop_medintens newline="0" title="0" style="chk" label="...Trt &lt;span style=&quot;color:red;font-weight:900&quot;&gt;médical&lt;/span&gt; à intensifier" unformattedLabel="" isModified="0" toPrint="0" indentation="" xmlStyle="" nextField="">on</chk_attprop_medintens>
+	<checkbox20012109284802212193 newline="0" title="0" style="chk" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">on</checkbox20012109284802212193>
+	<checkbox20012109284803212195 newline="0" title="0" style="chk" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">on</checkbox20012109284803212195>
+	<conclusion newline="1" title="1" style="lbl" label="Conclusions :" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<richtext633252412205744509206 newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+	Du text sans css
+<em>
+			<strong>Gras</strong>
+		</em>
+		<br/>
+		<em>Italique</em>
+		<br/>
+		<u>Surligné</u>
+		<br/>
+		<s>Barré</s>
+		<br/>
+		valeur<sub>avec indice</sub>
+		<br/>
+		valeur<sup>avec Exposant</sup>
+		<br/>
+		<span style="color: rgb(44, 130, 201);">bleu</span>
+		<br/>
+		<span style="color: rgb(44, 130, 201);">
+			<strong>bleu gras</strong>
+		</span>
+		<br/>
+		<br/>
+		<ul>
+			<li>
+				<span style="color: rgb(0, 0, 0);">Liste pt</span>
+			</li>
+			<li>
+				<span style="color: rgb(0, 0, 0);">liste pt2</span>
+			</li>
+		</ul>
+		<div style="text-align: left;">alignement L</div>
+		<div style="text-align: center;">alignement c</div>
+		<div style="text-align: right;">alignement R</div>
+		<div style="text-align: justify;">alignement just</div>
+		<ol>
+			<li>liste</li>
+			<li>liste2</li>
+		</ol>
+		<br/>
+		<div style="margin-left: 20px;">retrait</div>
+		Un autre text sans balise
+		<table style="width: 100%;">
+			<thead>
+				<tr>
+					<th>dfg <br/>
+					</th>
+					<th>H1</th>
+					<th> <br/>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="width: 33.3333%;">A1</td>
+					<td style="width: 33.3333%;">A2</td>
+					<td style="width: 33.3333%;"> <br/>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 33.3333%;">test</td>
+					<td style="width: 33.3333%;">B</td>
+					<td style="width: 33.3333%;"> <br/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<strong>
+			<em>
+				<u>test</u>
+			</em>
+		</strong>
+	</richtext633252412205744509206>
+	<trait_ajout newline="1" title="0" style="treatment" label="Adaptations de traitement" unformattedLabel="Traitement" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<treatment type="ambu"/>
+	</trait_ajout>
+	<trait_sortie newline="1" title="0" style="treatment" label="Traitement de sortie " unformattedLabel="Traitement" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<treatment type="ambu"/>
+		<drug drugnum="1">
+			<libel>DICLOFENAC EG RETARD COMPR 75 MG</libel>
+			<dStart>Inconnue</dStart>
+			<dEnd>Indéterminée</dEnd>
+			<duration>Indéterminée</duration>
+			<posology>1 comp 1X/J</posology>
+			<startCondition/>
+			<endCondition/>
+			<conditionalStatus/>
+			<route>ORAL</route>
+			<comment/>
+			<dStop/>
+			<isPaused>0</isPaused>
+			<statusPharmacy>Pas encore validé</statusPharmacy>
+			<planificationType/>
+			<prescriber>Loveluck Susan</prescriber>
+			<lastValidation/>
+			<prescriptionContext/>
+			<status/>
+			<userCreation>Edwards Roger</userCreation>
+			<userModification>test2 user</userModification>
+		</drug>
+		<drug drugnum="2">
+			<libel>DAFALGAN FORTE COMPR 1 GR</libel>
+			<dStart>Inconnue</dStart>
+			<dEnd>16/09/2018 16:15 16:15</dEnd>
+			<duration>1 jour</duration>
+			<posology>1 comp 1X/J</posology>
+			<startCondition/>
+			<endCondition/>
+			<conditionalStatus/>
+			<route>ORAL</route>
+			<comment/>
+			<dStop/>
+			<isPaused>0</isPaused>
+			<statusPharmacy>Pas encore validé</statusPharmacy>
+			<planificationType/>
+			<prescriber>Loveluck Susan</prescriber>
+			<lastValidation/>
+			<prescriptionContext/>
+			<status/>
+			<userCreation>Cooper Joshu</userCreation>
+			<userModification>test2 user</userModification>
+		</drug>
+		<drug drugnum="3">
+			<libel>DALACIN-C CAPS 300 MG</libel>
+			<dStart>Inconnue</dStart>
+			<dEnd>12/06/2018 15:45 15:45</dEnd>
+			<duration>1 jour</duration>
+			<posology>1 cap 4X/J</posology>
+			<startCondition/>
+			<endCondition/>
+			<conditionalStatus/>
+			<route>ORAL</route>
+			<comment/>
+			<dStop/>
+			<isPaused>0</isPaused>
+			<statusPharmacy>Pas encore validé</statusPharmacy>
+			<planificationType/>
+			<prescriber>Loveluck Susan</prescriber>
+			<lastValidation/>
+			<prescriptionContext/>
+			<status/>
+			<userCreation>Cooper Joshu</userCreation>
+			<userModification>test2 user</userModification>
+		</drug>
+	</trait_sortie>
+	<destinataire newline="1" title="0" style="recipient" label="Destinataire" unformattedLabel="" isModified="0" typeAdresse="" inami="" destAddresse="1" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<copie newline="1" title="0" style="cp" label="Copie(s)" unformattedLabel="" isModified="0" typeAdresse="" ccAddresse="1" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<label633252413205757509219 newline="1" title="1" style="lbl" label="commentaires :" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<txt_com newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<list style="chk" label="" unformattedLabel="" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<buttcoro newline="0" style="chk" label="Coronarographie" unformattedLabel="Coronarographie" isModified="0" value="Coronarographie" toPrint="1" nextField="">on</buttcoro>
+	</list>
+	<healthcardpediatrics/>
+	<diagnostics/>
+	<annexes/>
+</F_CORONARO_>
