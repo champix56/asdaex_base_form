@@ -2,6 +2,12 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des modeles pour la transposition des balises html vers fo-->
 	<xsl:include href="./html-transform.xsl"/>
+	<!-- cascade pour les sous rapports et les contenus de lists-->
+	<xsl:template match="subreport|list">
+		<fo:block>
+			<xsl:apply-templates select="*"/>
+		</fo:block>
+	</xsl:template>
 	<xsl:template match="*[@style='treatment' and .//drug]">
 		<fo:block>
 			<xsl:apply-templates select="@label"/>

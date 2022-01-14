@@ -35,10 +35,5 @@
 			</fo:page-sequence>
 		</fo:root>
 	</xsl:template>
-	<!-- cascade pour les sous rapports et les contenus de lists-->
-	<xsl:template match="subreport|list">
-		<fo:block>
-			<xsl:apply-templates select="*"/>
-		</fo:block>
-	</xsl:template>
+	
 </xsl:stylesheet>
