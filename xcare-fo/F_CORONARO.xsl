@@ -27,12 +27,21 @@
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
 	<!--<xsl:apply-templates select="//*[@style='lbl']|//*[@style='txt']|//*[@style='chk']|//*[@style='richetxt']"/>					-->
-<xsl:apply-templates select="/*/*"/>
+<xsl:apply-templates select="//*[@style='treatment']"/>
 					</fo:block>
 					<!--installation du repere dederniere page pour le calucul de pagination complet-->
 					<xsl:call-template name="finDePagination"/>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
+	</xsl:template>
+	<xsl:template match="*[@style='treatment' and .//drug]">
+		<fo:block>
+			<xsl:apply-templates select="@label"/><fo:block/>
+			<xsl:apply-templates select="drug"/>
+		</fo:block>
+	</xsl:template>
+	<xsl:template match="*[@style='treatment']/drug">
+		<fo:block><xsl:value-of select="libel"/></fo:block>
 	</xsl:template>
 </xsl:stylesheet>
