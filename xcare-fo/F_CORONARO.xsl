@@ -35,48 +35,4 @@
 			</fo:page-sequence>
 		</fo:root>
 	</xsl:template>
-	<xsl:template match="*[@style='treatment' and .//drug]">
-		<fo:block>
-			<xsl:apply-templates select="@label"/>
-			<fo:block/>
-			<xsl:apply-templates select="drug"/>
-		</fo:block>
-	</xsl:template>
-	<xsl:template match="*[@style='treatment']/drug">
-		<!--<fo:block><xsl:value-of select="libel"/></fo:block>-->
-		<fo:table>
-			<fo:table-header>
-				<fo:table-row>
-					<fo:table-cell>
-						<fo:block>Nom medicament</fo:block>
-					</fo:table-cell>
-					<fo:table-cell>
-						<fo:block>posology</fo:block>
-					</fo:table-cell>
-					<fo:table-cell>
-						<fo:block>commentaire</fo:block>
-					</fo:table-cell>
-				</fo:table-row>
-			</fo:table-header>
-			<fo:table-body>
-				<fo:table-row>
-					<fo:table-cell>
-						<fo:block>
-							<xsl:value-of select="libel"/>
-						</fo:block>
-					</fo:table-cell>
-					<fo:table-cell>
-						<fo:block>
-							<xsl:value-of select="posology"/>
-						</fo:block>
-					</fo:table-cell>
-					<fo:table-cell>
-						<fo:block>
-							<xsl:value-of select="comment"/>
-						</fo:block>
-					</fo:table-cell>
-				</fo:table-row>
-			</fo:table-body>
-		</fo:table>
-	</xsl:template>
 </xsl:stylesheet>

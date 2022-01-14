@@ -2,6 +2,50 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<!--inclusion des modeles pour la transposition des balises html vers fo-->
 	<xsl:include href="./html-transform.xsl"/>
+	<xsl:template match="*[@style='treatment' and .//drug]">
+		<fo:block>
+			<xsl:apply-templates select="@label"/>
+			<fo:block/>
+			<xsl:apply-templates select="drug"/>
+		</fo:block>
+	</xsl:template>
+	<xsl:template match="*[@style='treatment']/drug">
+		<!--<fo:block><xsl:value-of select="libel"/></fo:block>-->
+		<fo:table>
+			<fo:table-header>
+				<fo:table-row>
+					<fo:table-cell>
+						<fo:block>Nom medicament</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>posology</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>commentaire</fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+			</fo:table-header>
+			<fo:table-body>
+				<fo:table-row>
+					<fo:table-cell>
+						<fo:block>
+							<xsl:value-of select="libel"/>
+						</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>
+							<xsl:value-of select="posology"/>
+						</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>
+							<xsl:value-of select="comment"/>
+						</fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+			</fo:table-body>
+		</fo:table>
+	</xsl:template>
 	<!--traitement et gestion du text @label de toutes balises sans exception-->
 	<xsl:template match="@label">
 		<xsl:choose>
