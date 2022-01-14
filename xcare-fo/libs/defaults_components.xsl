@@ -12,6 +12,14 @@
 			</xsl:choose>
 		</fo:block>
 	</xsl:template>
+	<xsl:template match="*[@style='txt'] | *[@style='txtArea']">
+		<xsl:param name="color">black</xsl:param>
+		<xsl:param name="underline">normal</xsl:param>
+		<xsl:param name="bold">normal</xsl:param>
+		<fo:block font-weight="{$bold}" text-decoration="{$underline}" color="{$color}">
+			<xsl:value-of select="."/>
+		</fo:block>
+	</xsl:template>
 	<xsl:template match="*[@style='draw']">
 		<!--
 			Les 3 modes de decl de valeur par defaut
