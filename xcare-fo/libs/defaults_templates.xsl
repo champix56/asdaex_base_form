@@ -21,9 +21,10 @@
 	<xsl:template name="default-layouts">
 		<!--def. des formats de apier courrant utilisable par tous les formulaires-->
 		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
-			<fo:region-body margin-bottom="5mm" margin-top="2.3cm"/>
+			<fo:region-body margin-bottom="5mm" margin-top="2.3cm" margin-left="6cm"/>
 			<fo:region-before extent="2cm"/>
 			<fo:region-after extent="5mm"/>
+			<fo:region-start extent="6cm"/>
 		</fo:simple-page-master>
 		<fo:simple-page-master master-name="A4_portrait_nohead_nofoot" page-height="{$paperHeight}" page-width="{$paperWidth}">
 			<fo:region-body/>
@@ -48,9 +49,9 @@ derniere page si IMPAIR
 				<fo:table>
 					<fo:table-body>
 						<fo:table-row>
-							<fo:table-cell width="4cm" text-align="right">
+							<!--<fo:table-cell width="4cm" text-align="right">
 								<fo:block>
-									<!--
+									--><!--
 												mise en place d'une image externe(jpg)
 	
 												ATTENTION AUX CHEMINS DE L'IMAGE
@@ -61,10 +62,10 @@ derniere page si IMPAIR
 
 													PAS UTILISE DES VERSION 2.0
 															./chemin/img.jpg
-											-->
+											--><!--
 									<fo:external-graphic src="{$donneesHospi/logo}" scaling="uniform" content-height="2cm" content-width="2cm"/>
 								</fo:block>
-							</fo:table-cell>
+							</fo:table-cell>-->
 							<fo:table-cell>
 								<fo:block text-align="center">
 									<fo:block xsl:use-attribute-sets="site-title"><xsl:value-of select="$donneesHospi/nomSite"/></fo:block>
