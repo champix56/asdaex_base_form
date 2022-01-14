@@ -20,6 +20,9 @@
 			<xsl:value-of select="."/>
 		</fo:block>
 	</xsl:template>
+	<xsl:template match="*[@style='richetxt']">
+		<fo:block></fo:block>
+	</xsl:template>
 	<xsl:template match="*[@style='draw']">
 		<!--
 			Les 3 modes de decl de valeur par defaut
