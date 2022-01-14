@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="libs/defaults_templates.xsl"/>
-	<xsl:include href="libs/debug.xsl"/>
-	<!--traitements specifique pour ce formulaire uniquement-->
+<!--	<xsl:include href="libs/debug.xsl"/>
+-->	<!--traitements specifique pour ce formulaire uniquement-->
 	<!--redefinition d'un composant generique pour ce form
 	<xsl:template match="*[@style='lbl']" priority="1">
 		traitement specifique d'un label lambda pour ce formulaire
@@ -29,6 +29,8 @@
 	<!--<xsl:apply-templates select="//*[@style='lbl']|//*[@style='txt']|//*[@style='chk']|//*[@style='richetxt']"/>					-->
 <xsl:apply-templates select="/*/*"/>
 					</fo:block>
+					<!--installation du repere dederniere page pour le calucul de pagination complet-->
+					<xsl:call-template name="finDePagination"/>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
