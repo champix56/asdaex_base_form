@@ -25,6 +25,12 @@
 				<xsl:call-template name="default-region-before"/>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
+						<fo:block>
+							<xsl:apply-templates select="/*/@patFirstName | /*/@patLastName"/>
+						</fo:block>
+						<xsl:apply-templates select="/*/dessin">
+							<xsl:with-param name="width">17cm</xsl:with-param>
+						</xsl:apply-templates>
 						<xsl:apply-templates select="/*/*"/>
 					</fo:block>
 				</fo:flow>
