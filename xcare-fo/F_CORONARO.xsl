@@ -26,8 +26,8 @@
 				<xsl:call-template name="default-header-and-footer"/>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
-	<!--<xsl:apply-templates select="//*[@style='lbl']|//*[@style='txt']|//*[@style='chk']|//*[@style='richetxt']"/>					-->
-<xsl:apply-templates select="//*[@style='treatment']"/>
+						<!--<xsl:apply-templates select="//*[@style='lbl']|//*[@style='txt']|//*[@style='chk']|//*[@style='richetxt']"/>					-->
+						<xsl:apply-templates select="//*[@style='treatment']"/>
 					</fo:block>
 					<!--installation du repere dederniere page pour le calucul de pagination complet-->
 					<xsl:call-template name="finDePagination"/>
@@ -37,11 +37,46 @@
 	</xsl:template>
 	<xsl:template match="*[@style='treatment' and .//drug]">
 		<fo:block>
-			<xsl:apply-templates select="@label"/><fo:block/>
+			<xsl:apply-templates select="@label"/>
+			<fo:block/>
 			<xsl:apply-templates select="drug"/>
 		</fo:block>
 	</xsl:template>
 	<xsl:template match="*[@style='treatment']/drug">
-		<fo:block><xsl:value-of select="libel"/></fo:block>
+		<!--<fo:block><xsl:value-of select="libel"/></fo:block>-->
+		<fo:table>
+			<fo:table-header>
+				<fo:table-row>
+					<fo:table-cell>
+						<fo:block>Nom medicament</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>posology</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>commentaire</fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+			</fo:table-header>
+			<fo:table-body>
+				<fo:table-row>
+					<fo:table-cell>
+						<fo:block>
+							<xsl:value-of select="libel"/>
+						</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>
+							<xsl:value-of select="posology"/>
+						</fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block>
+							<xsl:value-of select="comment"/>
+						</fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+			</fo:table-body>
+		</fo:table>
 	</xsl:template>
 </xsl:stylesheet>
