@@ -57,6 +57,55 @@
 						</fo:table>
 					</fo:block>
 				</fo:static-content>
-				
+	</xsl:template>
+	<xsl:template name="default-region-after">
+		<!--*************************************************************************************-->
+		<!-- REGION FOOTER -->
+		<!--*************************************************************************************-->
+		<fo:static-content flow-name="xsl-region-after">
+			<!--*************************************************************************************-->
+			<!-- Numéro et nombre de page(s) -->
+			<!--*************************************************************************************-->
+			<fo:block border-top="0.05cm solid #ccc" color="#666" text-align="center" font-size="9pt"/>
+			<!--*************************************************************************************-->
+			<!--Personne qui a édité le document-->
+			<!--*************************************************************************************-->
+			<fo:table width="190mm">
+				<fo:table-column column-width="80mm"/>
+				<fo:table-column column-width="20mm"/>
+				<fo:table-column column-width="90mm"/>
+				<fo:table-body>
+					<fo:table-row>
+						<fo:table-cell>
+							<fo:block font-size="8pt" text-align="left">
+								<fo:inline>Auteur du document :
+												<xsl:value-of select="*/@doctorFirstName"/>
+									<xsl:text> </xsl:text>
+									<xsl:value-of select="*/@doctorLastName"/>
+								</fo:inline>
+							</fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+							<fo:block font-size="8pt" text-align="center">
+								<fo:page-number/> / 
+											<fo:page-number-citation ref-id="NbPageTotal"/>
+							</fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+							<fo:block font-size="8pt" text-align="right">
+								<fo:inline>Edité par
+												<xsl:value-of select="*/@userFirstName"/>&#160;
+												<xsl:value-of select="*/@userLastName"/>
+								</fo:inline>
+							</fo:block>
+						</fo:table-cell>
+					</fo:table-row>
+				</fo:table-body>
+			</fo:table>
+		</fo:static-content>
+	</xsl:template>
+	<xsl:template name="default-header-and-footer">
+		<xsl:call-template name="default-region-before"/>
+		<xsl:call-template name="default-region-after"/>
 	</xsl:template>
 </xsl:stylesheet>
