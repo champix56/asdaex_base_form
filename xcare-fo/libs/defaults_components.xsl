@@ -87,9 +87,9 @@
 			Les 3 modes de decl de valeur par defaut
 			<xsl:param name="width">15cm</xsl:param>
 		-->
-		<xsl:param name="width" select="'15cm'"/>
+		<xsl:param name="width" select="'100%'"/>
 		<xsl:param name="height">
-			<xsl:value-of select="'15cm'"/>
+			<xsl:value-of select="'100%'"/>
 		</xsl:param>
 		<fo:block text-align="center">
 			<xsl:apply-templates select="@label"/><fo:block/>
