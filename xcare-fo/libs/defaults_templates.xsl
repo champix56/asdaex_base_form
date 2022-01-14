@@ -8,13 +8,13 @@
 
 		les params eux peuvent etre modifier depuis l'execution de la commande fop pour chaque transformations
 	-->
-	<xsl:variable name="paperWidth" select="'8in'"/>
-	<xsl:param name="paperHeight" select="'11in'"/>
+	<xsl:variable name="paperWidth" select="'210mm'"/>
+	<xsl:param name="paperHeight" select="'297mm'"/>
 
 	<xsl:template name="default-layouts">
 	<!--def. des formats de apier courrant utilisable par tous les formulaires-->
 		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
-			<fo:region-body margin-bottom="5mm" margin-top="2cm" column-count="2"/>
+			<fo:region-body margin-bottom="5mm" margin-top="2cm"/>
 			<fo:region-before extent="2cm"/>
 			<fo:region-after extent="5mm"/>
 		</fo:simple-page-master>
