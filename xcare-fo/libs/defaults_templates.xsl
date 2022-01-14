@@ -124,6 +124,40 @@ derniere page si IMPAIR
 			</fo:table>
 		</fo:static-content>
 	</xsl:template>
+	<xsl:template name="cartouche-service">
+		<xsl:param name="service"/>
+		<fo:static-content flow-name="xsl-region-start">
+			<fo:block text-align="center">
+				<fo:external-graphic src="{$donneesHospi/logo}" scaling="uniform" content-height="2cm" content-width="2cm"/>
+				<fo:block xsl:use-attribute-sets="richetext-bold" font-size="13pt" color="blue">
+					<xsl:value-of select="$service/service/nom"/>
+				</fo:block>
+				Tel:<xsl:value-of select="$service/service/tel"/>
+				<fo:block/>
+				Mail:<xsl:value-of select="$service/service/mail"/>
+				<fo:block xsl:use-attribute-sets="richetext-bold" margin-top="1cm">
+					<xsl:value-of select="$service/service/chefService/nom"/>
+				</fo:block>
+				<fo:block font-size="9pt">
+					<xsl:value-of select="$service/service/chefService/role"/>
+				</fo:block>
+				<xsl:apply-templates select="$service/service/sections/section"/>
+			</fo:block>
+		</fo:static-content>
+	</xsl:template>
+	<xsl:template match="sections/section">
+		<fo:block margin-top="1cm">
+			<fo:block color="skyblue" text-decoration="underline" font-style="italic">
+				<xsl:value-of select="nom"/>
+			</fo:block>
+			<xsl:apply-templates select="personnels/personnel"/>
+		</fo:block>
+	</xsl:template>
+	<xsl:template match="section/personnels/personnel">
+		<fo:block>
+			<xsl:value-of select="nom/@civ"/><xsl:text> </xsl:text><xsl:value-of select="nom"/>
+		</fo:block>
+	</xsl:template>
 	<xsl:template name="default-header-and-footer">
 		<xsl:call-template name="default-region-before"/>
 		<xsl:call-template name="default-region-after"/>
