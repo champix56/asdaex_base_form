@@ -5,4 +5,17 @@
 		<xsl:attribute name="font-weight">900</xsl:attribute>
 		<xsl:attribute name="text-decoration">underline</xsl:attribute>
 	</xsl:attribute-set>
+	<!--section de style pour les richetext-->
+	<xsl:attribute-set name="richetext-bold">
+		<xsl:attribute name="font-weight">900</xsl:attribute>
+	</xsl:attribute-set>
+		<xsl:attribute-set name="richetext-underline">
+		<xsl:attribute name="text-decoration">underline</xsl:attribute>
+	</xsl:attribute-set>		
+	<xsl:attribute-set name="richetext-barre">
+		<xsl:attribute name="text-decoration">line-through</xsl:attribute>
+	</xsl:attribute-set>
+		<xsl:attribute-set name="richetext-italic">
+		<xsl:attribute name="font-style">italic</xsl:attribute>
+	</xsl:attribute-set>
 </xsl:stylesheet>
