@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<nom>Cardiologie</nom>
+	<tel>421/32.22.11</tel>
+	<mail>mail@mail.com</mail>
+	<chefService>
+		<nom civ="Dr">DESORBAIX Alexandre</nom>
+		<role>Directeur service</role>
+	</chefService>
+	<sections>
+		<section>
+			<nom>Neurologie</nom>
+			<personnel>
+				<personnels>
+					<nom civ="Dr">Sophie Nardella</nom>
+				</personnels>
+				<personnel>
+					<nom civ="Dr">Cyril Meurisse</nom>
+				</personnel>
+				<personnel civ="Mr">Guillaume Leclercq</personnel>
+			</personnel>
+		</section>
+		<section>
+			<nom>Psychiatrie</nom>
+			<personnels>
+				<personnel>
+					<nom civ="Dr">Audrey <fo:block/> Tamo</nom>
+				</personnel>
+				<personnel>
+					<nom civ="Dr">Salvator Buttice</nom>
+				</personnel>
+				<personnel civ="M">Elena Hergot</personnel>
+			</personnels>
+		</section>
+	</sections>
+</service>
