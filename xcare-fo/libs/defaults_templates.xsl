@@ -5,7 +5,9 @@
 	<xsl:variable name="donneesHospi">
 		<logo>https://github.com/champix56/asdaex_base_form/raw/master/xml/asdaex_logo.jpg</logo>
 		<nomSite>asdaex</nomSite>
-		<adr><fo:block>Av. de l'Industrie 13 Bis<fo:block/>1420 Braine-l'Alleud<fo:block/>Belgique</fo:block></adr>
+		<adr>
+			<fo:block>Av. de l'Industrie 13 Bis<fo:block/>1420 Braine-l'Alleud<fo:block/>Belgique</fo:block>
+		</adr>
 	</xsl:variable>
 	<!--echapement des "non imprimés"-->
 	<xsl:template match="//*[@toPrint=0]" priority="10"/>
@@ -51,7 +53,8 @@ derniere page si IMPAIR
 						<fo:table-row>
 							<!--<fo:table-cell width="4cm" text-align="right">
 								<fo:block>
-									--><!--
+									-->
+							<!--
 												mise en place d'une image externe(jpg)
 	
 												ATTENTION AUX CHEMINS DE L'IMAGE
@@ -62,13 +65,16 @@ derniere page si IMPAIR
 
 													PAS UTILISE DES VERSION 2.0
 															./chemin/img.jpg
-											--><!--
+											-->
+							<!--
 									<fo:external-graphic src="{$donneesHospi/logo}" scaling="uniform" content-height="2cm" content-width="2cm"/>
 								</fo:block>
 							</fo:table-cell>-->
 							<fo:table-cell>
 								<fo:block text-align="center">
-									<fo:block xsl:use-attribute-sets="site-title"><xsl:value-of select="$donneesHospi/nomSite"/></fo:block>
+									<fo:block xsl:use-attribute-sets="site-title">
+										<xsl:value-of select="$donneesHospi/nomSite"/>
+									</fo:block>
 									<xsl:value-of select="$donneesHospi/adr"/>
 								</fo:block>
 							</fo:table-cell>
@@ -90,10 +96,10 @@ derniere page si IMPAIR
 			<!--*************************************************************************************-->
 			<!--Personne qui a édité le document-->
 			<!--*************************************************************************************-->
-			<fo:table width="190mm">
-				<fo:table-column column-width="80mm"/>
-				<fo:table-column column-width="20mm"/>
-				<fo:table-column column-width="90mm"/>
+			<fo:table width="130mm">
+				<fo:table-column column-width="75mm"/>
+				<fo:table-column column-width="15mm"/>
+				<fo:table-column column-width="70mm"/>
 				<fo:table-body>
 					<fo:table-row>
 						<fo:table-cell>
@@ -155,7 +161,9 @@ derniere page si IMPAIR
 	</xsl:template>
 	<xsl:template match="section/personnels/personnel">
 		<fo:block>
-			<xsl:value-of select="nom/@civ"/><xsl:text> </xsl:text><xsl:value-of select="nom"/>
+			<xsl:value-of select="nom/@civ"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select="nom"/>
 		</fo:block>
 	</xsl:template>
 	<xsl:template name="default-header-and-footer">
@@ -165,5 +173,16 @@ derniere page si IMPAIR
 	<!--repere de fin pour la pagination page total-->
 	<xsl:template name="finDePagination">
 		<fo:block id="NbPageTotal"/>
+	</xsl:template>
+	<xsl:template name="pat-ident">
+		<fo:block margin-left="8cm">
+			<xsl:value-of select="/*/@patFirstName"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select="/*/@patLastName"/>
+			<fo:block/>
+			<xsl:value-of select="/*/@patientAdresse"/>, <xsl:value-of select="/*/@patientCp"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select="/*/@patientLoc"/>
+		</fo:block>
 	</xsl:template>
 </xsl:stylesheet>
