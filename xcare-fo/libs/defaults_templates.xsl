@@ -2,6 +2,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="./defaults_styles.xsl"/>
 	<xsl:include href="./defaults_components.xsl"/>
+	<xsl:variable name="donneesHospi">
+		<logo>https://github.com/champix56/asdaex_base_form/raw/master/xml/asdaex_logo.jpg</logo>
+		<nomSite>asdaex</nomSite>
+		<adr><fo:block>Av. de l'Industrie 13 Bis<fo:block/>1420 Braine-l'Alleud<fo:block/>Belgique</fo:block></adr>
+	</xsl:variable>
 	<!--echapement des "non imprimés"-->
 	<xsl:template match="//*[@toPrint=0]" priority="10"/>
 	<!--template d'echapement pour traitement de noeud inconnu-->
@@ -57,15 +62,13 @@ derniere page si IMPAIR
 													PAS UTILISE DES VERSION 2.0
 															./chemin/img.jpg
 											-->
-									<fo:external-graphic src="https://github.com/champix56/asdaex_base_form/raw/master/xml/asdaex_logo.jpg" scaling="uniform" content-height="2cm" content-width="2cm"/>
+									<fo:external-graphic src="{$donneesHospi/logo}" scaling="uniform" content-height="2cm" content-width="2cm"/>
 								</fo:block>
 							</fo:table-cell>
 							<fo:table-cell>
 								<fo:block text-align="center">
-									<fo:block xsl:use-attribute-sets="site-title">ASDAEX</fo:block>
-											Av. de l'Industrie 13 Bis<fo:block/>
-											1420 Braine-l'Alleud<fo:block/>
-											Belgique - format papier <xsl:value-of select="$paperHeight"/>
+									<fo:block xsl:use-attribute-sets="site-title"><xsl:value-of select="$donneesHospi/nomSite"/></fo:block>
+									<xsl:value-of select="$donneesHospi/adr"/>
 								</fo:block>
 							</fo:table-cell>
 						</fo:table-row>
