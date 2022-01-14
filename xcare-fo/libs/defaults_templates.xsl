@@ -10,9 +10,8 @@
 	-->
 	<xsl:variable name="paperWidth" select="'210mm'"/>
 	<xsl:param name="paperHeight" select="'297mm'"/>
-
 	<xsl:template name="default-layouts">
-	<!--def. des formats de apier courrant utilisable par tous les formulaires-->
+		<!--def. des formats de apier courrant utilisable par tous les formulaires-->
 		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
 			<fo:region-body margin-bottom="5mm" margin-top="2cm"/>
 			<fo:region-before extent="2cm"/>
@@ -21,16 +20,29 @@
 		<fo:simple-page-master master-name="A4_portrait_nohead_nofoot" page-height="{$paperHeight}" page-width="{$paperWidth}">
 			<fo:region-body/>
 		</fo:simple-page-master>
+		<fo:simple-page-master master-name="A4_portrait_nohead_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
+			<fo:region-body margin-bottom="5mm"/>
+			<fo:region-after extent="5mm"/>
+		</fo:simple-page-master>
+		<fo:page-sequence-master master-name="A4_default_first_header_all_footer">
+			<fo:repeatable-page-master-alternatives>
+				<fo:conditional-page-master-reference master-reference="A4_portrait_head_foot" page-position="first"/>
+				<fo:conditional-page-master-reference master-reference="A4_portrait_nohead_foot" page-position="rest"/>
+				<!--
+derniere page si IMPAIR
+<fo:conditional-page-master-reference master-reference="A4_portrait_nohead_foot" blank-or-not-blank="blank" page-position="last" odd-or-even="even"  />-->
+			</fo:repeatable-page-master-alternatives>
+		</fo:page-sequence-master>
 	</xsl:template>
 	<xsl:template name="default-region-before">
 		<fo:static-content flow-name="xsl-region-before">
-					<fo:block border-bottom="0.2mm solid #0f5a93">
-						<fo:table>
-							<fo:table-body>
-								<fo:table-row>
-									<fo:table-cell width="4cm" text-align="right">
-										<fo:block>
-											<!--
+			<fo:block border-bottom="0.2mm solid #0f5a93">
+				<fo:table>
+					<fo:table-body>
+						<fo:table-row>
+							<fo:table-cell width="4cm" text-align="right">
+								<fo:block>
+									<!--
 												mise en place d'une image externe(jpg)
 	
 												ATTENTION AUX CHEMINS DE L'IMAGE
@@ -42,22 +54,22 @@
 													PAS UTILISE DES VERSION 2.0
 															./chemin/img.jpg
 											-->
-											<fo:external-graphic src="https://github.com/champix56/asdaex_base_form/raw/master/xml/asdaex_logo.jpg" scaling="uniform" content-height="2cm" content-width="2cm"/>
-										</fo:block>
-									</fo:table-cell>
-									<fo:table-cell>
-										<fo:block text-align="center">
-											<fo:block xsl:use-attribute-sets="site-title">ASDAEX</fo:block>
+									<fo:external-graphic src="https://github.com/champix56/asdaex_base_form/raw/master/xml/asdaex_logo.jpg" scaling="uniform" content-height="2cm" content-width="2cm"/>
+								</fo:block>
+							</fo:table-cell>
+							<fo:table-cell>
+								<fo:block text-align="center">
+									<fo:block xsl:use-attribute-sets="site-title">ASDAEX</fo:block>
 											Av. de l'Industrie 13 Bis<fo:block/>
 											1420 Braine-l'Alleud<fo:block/>
 											Belgique - format papier <xsl:value-of select="$paperHeight"/>
-										</fo:block>
-									</fo:table-cell>
-								</fo:table-row>
-							</fo:table-body>
-						</fo:table>
-					</fo:block>
-				</fo:static-content>
+								</fo:block>
+							</fo:table-cell>
+						</fo:table-row>
+					</fo:table-body>
+				</fo:table>
+			</fo:block>
+		</fo:static-content>
 	</xsl:template>
 	<xsl:template name="default-region-after">
 		<!--*************************************************************************************-->
@@ -110,5 +122,7 @@
 		<xsl:call-template name="default-region-after"/>
 	</xsl:template>
 	<!--repere de fin pour la pagination page total-->
-	<xsl:template name="finDePagination"><fo:block id="NbPageTotal"/></xsl:template>
+	<xsl:template name="finDePagination">
+		<fo:block id="NbPageTotal"/>
+	</xsl:template>
 </xsl:stylesheet>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="libs/defaults_templates.xsl"/>
-<!--	<xsl:include href="libs/debug.xsl"/>
--->	<!--traitements specifique pour ce formulaire uniquement-->
+	<xsl:include href="libs/debug.xsl"/>
+	<!--traitements specifique pour ce formulaire uniquement-->
 	<!--redefinition d'un composant generique pour ce form
 	<xsl:template match="*[@style='lbl']" priority="1">
 		traitement specifique d'un label lambda pour ce formulaire
@@ -22,7 +22,7 @@
 				<!--layouts par default pour tous les formulaire du site-->
 				<xsl:call-template name="default-layouts"/>
 			</fo:layout-master-set>
-			<fo:page-sequence master-reference="A4_portrait_head_foot">
+			<fo:page-sequence master-reference="A4_default_first_header_all_footer">
 				<xsl:call-template name="default-header-and-footer"/>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
