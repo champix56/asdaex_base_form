@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service>
+<service xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<nom>Cardiologie</nom>
 	<tel>421/32.22.11</tel>
 	<mail>mail@mail.com</mail>
@@ -10,15 +10,15 @@
 	<sections>
 		<section>
 			<nom>Neurologie</nom>
-			<personnel>
-				<personnels>
+			<personnels>
+				<personnel>
 					<nom civ="Dr">Sophie Nardella</nom>
-				</personnels>
+				</personnel>
 				<personnel>
 					<nom civ="Dr">Cyril Meurisse</nom>
 				</personnel>
-				<personnel civ="Mr">Guillaume Leclercq</personnel>
-			</personnel>
+				<personnel><nom  civ="Mr">Guillaume Leclercq</nom></personnel>
+			</personnels>
 		</section>
 		<section>
 			<nom>Psychiatrie</nom>
@@ -29,7 +29,7 @@
 				<personnel>
 					<nom civ="Dr">Salvator Buttice</nom>
 				</personnel>
-				<personnel civ="M">Elena Hergot</personnel>
+				<personnel><nom civ="M">Elena Hergot</nom></personnel>
 			</personnels>
 		</section>
 	</sections>
