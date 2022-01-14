@@ -113,13 +113,51 @@
 	<checkbox20012109284803212195 newline="0" title="0" style="chk" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="" xmlStyle="" nextField="">on</checkbox20012109284803212195>
 	<conclusion newline="1" title="1" style="lbl" label="Conclusions :" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
 	<richtext633252412205744509206 newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
-		<strong>gras</strong> <br/>
-		<u>surligné</u> <br/>
-		<em>italique</em> <br/>
+	Du text sans css
+<em>
+			<strong>Gras</strong>
+		</em>
+		<br/>
+		<em>Italique</em>
+		<br/>
+		<u>Surligné</u>
+		<br/>
+		<s>Barré</s>
+		<br/>
+		valeur<sub>avec indice</sub>
+		<br/>
+		valeur<sup>avec Exposant</sup>
+		<br/>
+		<span style="color: rgb(44, 130, 201);">bleu</span>
+		<br/>
+		<span style="color: rgb(44, 130, 201);">
+			<strong>bleu gras</strong>
+		</span>
+		<br/>
+		<br/>
+		<ul>
+			<li>
+				<span style="color: rgb(0, 0, 0);">Liste pt</span>
+			</li>
+			<li>
+				<span style="color: rgb(0, 0, 0);">liste pt2</span>
+			</li>
+		</ul>
+		<div style="text-align: left;">alignement L</div>
+		<div style="text-align: center;">alignement c</div>
+		<div style="text-align: right;">alignement R</div>
+		<div style="text-align: justify;">alignement just</div>
+		<ol>
+			<li>liste</li>
+			<li>liste2</li>
+		</ol>
+		<br/>
+		<div style="margin-left: 20px;">retrait</div>
+		Un autre text sans balise
 		<table style="width: 100%;">
 			<thead>
 				<tr>
-					<th> <br/>
+					<th>dfg <br/>
 					</th>
 					<th>H1</th>
 					<th> <br/>
@@ -141,6 +179,11 @@
 				</tr>
 			</tbody>
 		</table>
+		<strong>
+			<em>
+				<u>test</u>
+			</em>
+		</strong>
 	</richtext633252412205744509206>
 	<trait_ajout newline="1" title="0" style="treatment" label="Adaptations de traitement" unformattedLabel="Traitement" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
 		<treatment type="ambu"/>
