@@ -11,12 +11,19 @@
 					<xsl:apply-templates select="thead"/>
 					<xsl:apply-templates select="tbody"/>
 					<xsl:apply-templates select="tfoot"/>
-
 				</xsl:otherwise>
 			</xsl:choose>
 		</fo:table>
 	</xsl:template>
 	<xsl:template match="thead">
+		<fo:table-header>
+			<xsl:apply-templates select="tr"/>
+		</fo:table-header>
+	</xsl:template>
+	<xsl:template match="tfoot">
+		<fo:table-footer>
+			<xsl:apply-templates select="tr"/>
+		</fo:table-footer>
 	</xsl:template>
 	<xsl:template match="tbody" name="tbody">
 		<fo:table-body>
@@ -36,35 +43,35 @@
 	<xsl:template match="td">
 		<fo:table-cell>
 			<fo:block>
-				<xsl:apply-templates select="*"/>
+				<xsl:apply-templates select="*|text()"/>
 			</fo:block>
 		</fo:table-cell>
 	</xsl:template>
 	<xsl:template match="th">
 		<fo:table-cell text-align="center" font-weight="900">
 			<fo:block>
-				<xsl:apply-templates select="*"/>
+				<xsl:apply-templates select="*|text()"/>
 			</fo:block>
 		</fo:table-cell>
 	</xsl:template>
 	<xsl:template match="del">
 		<fo:inline xsl:use-attribute-sets="richetext-barre">
-			<xsl:value-of select="."/>
+			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
 	</xsl:template>
 	<xsl:template match="u">
 		<fo:inline xsl:use-attribute-sets="richetext-underline">
-			<xsl:value-of select="."/>
+			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
 	</xsl:template>
-		<xsl:template match="em">
+	<xsl:template match="em">
 		<fo:inline xsl:use-attribute-sets="richetext-italic">
-			<xsl:value-of select="."/>
+			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
 	</xsl:template>
 	<xsl:template match="strong">
 		<fo:inline xsl:use-attribute-sets="richetext-bold">
-			<xsl:value-of select="."/>
+			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
 	</xsl:template>
 	<xsl:template match="br">
