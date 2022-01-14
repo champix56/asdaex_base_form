@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service SYSTEM "service.dtd">
 <service xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<nom>Cardiologie</nom>
 	<tel>421/32.22.11</tel>
