@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xsl:stylesheet [
-	<!ENTITY nbsp "&#160;">
-]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="libs/defaults_templates.xsl"/>
 	<xsl:variable name="serviceInfos" select="document('dataServices/cardio.xml')"/>
@@ -52,7 +49,7 @@
 	</xsl:template>
 	<xsl:template match="section/personnels/personnel">
 		<fo:block>
-			<xsl:value-of select="nom/@civ"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xsl:value-of select="nom"/>
+			<xsl:value-of select="nom/@civ"/><xsl:text> </xsl:text><xsl:value-of select="nom"/>
 		</fo:block>
 	</xsl:template>
 </xsl:stylesheet>
