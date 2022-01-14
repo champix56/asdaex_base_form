@@ -10,6 +10,7 @@
 				<xsl:call-template name="default-header-and-footer"/>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block></fo:block>
+					<xsl:call-template name="finDePagination"/>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
