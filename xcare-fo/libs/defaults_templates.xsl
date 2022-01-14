@@ -2,6 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="./defaults_styles.xsl"/>
 	<xsl:include href="./defaults_components.xsl"/>
+	<xsl:template match="*|@*"/>
 	<!--
 		variable global de configuration 
 
@@ -13,7 +14,7 @@
 	<xsl:template name="default-layouts">
 	<!--def. des formats de apier courrant utilisable par tous les formulaires-->
 		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
-			<fo:region-body margin-bottom="5mm" margin-top="2cm"/>
+			<fo:region-body margin-bottom="5mm" margin-top="2cm" column-count="2"/>
 			<fo:region-before extent="2cm"/>
 			<fo:region-after extent="5mm"/>
 		</fo:simple-page-master>
@@ -23,7 +24,7 @@
 	</xsl:template>
 	<xsl:template name="default-region-before">
 		<fo:static-content flow-name="xsl-region-before">
-					<fo:block>
+					<fo:block border-bottom="0.2mm solid #0f5a93">
 						<fo:table>
 							<fo:table-body>
 								<fo:table-row>
@@ -108,4 +109,6 @@
 		<xsl:call-template name="default-region-before"/>
 		<xsl:call-template name="default-region-after"/>
 	</xsl:template>
+	<!--repere de fin pour la pagination page total-->
+	<xsl:template name="finDePagination"><fo:block id="NbPageTotal"/></xsl:template>
 </xsl:stylesheet>
