@@ -13,7 +13,7 @@
 	<xsl:template name="default-layouts">
 		<!--def. des formats de apier courrant utilisable par tous les formulaires-->
 		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
-			<fo:region-body margin-bottom="5mm" margin-top="2cm"/>
+			<fo:region-body margin-bottom="5mm" margin-top="2.3cm"/>
 			<fo:region-before extent="2cm"/>
 			<fo:region-after extent="5mm"/>
 		</fo:simple-page-master>
