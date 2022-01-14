@@ -2,15 +2,22 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:include href="./defaults_styles.xsl"/>
 	<xsl:include href="./defaults_components.xsl"/>
+	<!--
+		variable global de configuration 
+
+		les params eux peuvent etre modifier depuis l'execution de la commande fop pour chaque transformations
+	-->
+	<xsl:variable name="paperWidth" select="'8in'"/>
+	<xsl:param name="paperHeight" select="'11in'"/>
 
 	<xsl:template name="default-layouts">
 	<!--def. des formats de apier courrant utilisable par tous les formulaires-->
-		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="297mm" page-width="210mm">
+		<fo:simple-page-master master-name="A4_portrait_head_foot" page-height="{$paperHeight}" page-width="{$paperWidth}">
 			<fo:region-body margin-bottom="5mm" margin-top="2cm"/>
 			<fo:region-before extent="2cm"/>
 			<fo:region-after extent="5mm"/>
 		</fo:simple-page-master>
-		<fo:simple-page-master master-name="A4_portrait_nohead_nofoot" page-height="297mm" page-width="210mm">
+		<fo:simple-page-master master-name="A4_portrait_nohead_nofoot" page-height="{$paperHeight}" page-width="{$paperWidth}">
 			<fo:region-body/>
 		</fo:simple-page-master>
 	</xsl:template>
@@ -42,7 +49,7 @@
 											<fo:block xsl:use-attribute-sets="site-title">ASDAEX</fo:block>
 											Av. de l'Industrie 13 Bis<fo:block/>
 											1420 Braine-l'Alleud<fo:block/>
-											Belgique
+											Belgique - format papier <xsl:value-of select="$paperHeight"/>
 										</fo:block>
 									</fo:table-cell>
 								</fo:table-row>
